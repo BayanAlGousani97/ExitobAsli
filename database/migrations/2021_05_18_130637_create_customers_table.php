@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateCustomersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,26 +13,19 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
-            $table->string('username')->unique();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->enum('status',['ACTIVE','INACTIVE', 'PENDING'])->default('PENDING');
-            $table->string('facebook')->nullable();
             $table->string('phone_number')->nullable();
-            $table->string('provider')->nullable();
-            $table->string('provider_id')->nullable();  
-            $table->text('brief')->nullable();
+            $table->string('address')->nullable();
+            $table->boolean('is_verified')->nullable();
+            $table->double('bills_count')->nullable();
+            $table->bigInteger('country_id')->unsigned();
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->bigInteger('avatar')->unsigned();
             $table->foreign('avatar')->references('id')->on('images')->onDelete('cascade');
-            $table->rememberToken();
             $table->timestamps();
-
-
         });
     }
 
@@ -43,6 +36,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('customers');
     }
 }
