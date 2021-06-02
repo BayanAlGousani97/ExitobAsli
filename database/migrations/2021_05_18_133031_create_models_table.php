@@ -23,8 +23,7 @@ class CreateModelsTable extends Migration
             $table->bigInteger('design_id')->unsigned();
             $table->foreign('design_id')->references('id')->on('designs')->onDelete('cascade');
             $table->bigInteger('models_warehouse_id')->unsigned();
-            $table->foreign('models_warehouse_id')->references('id')->on('models_warehouses')->onDelete('cascade');
-            $table->string('image')->nullable();
+            $table->foreign('models_warehouse_id')->references('id')->on('models_warehouses')->onDelete('cascade'); 
             $table->timestamps();
         });
     }

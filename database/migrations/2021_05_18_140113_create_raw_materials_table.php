@@ -27,7 +27,6 @@ class CreateRawMaterialsTable extends Migration
 
             $table->bigInteger('i_o_bill_id')->unsigned();
             $table->foreign('i_o_bill_id')->references('id')->on('i_o_bills')->onDelete('cascade');
-            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

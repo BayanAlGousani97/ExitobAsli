@@ -15,10 +15,10 @@ class CreateIOBillsTable extends Migration
     {
         Schema::create('i_o_bills', function (Blueprint $table) {
             $table->id();
-            $table->double('number')->nullable();
+            $table->string('type')->nullable();
+            $table->string('number')->nullable();
             $table->dateTime('publish_date')->nullable();
             $table->text('description')->nullable();
-            $table->string('type')->nullable();
             $table->double('quantity')->nullable();
             $table->enum('discount_type',['PERCENT','MONEY'])->nullable();
             $table->double('discount')->nullable();

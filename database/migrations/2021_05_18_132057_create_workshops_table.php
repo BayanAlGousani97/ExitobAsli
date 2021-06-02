@@ -20,8 +20,7 @@ class CreateWorkshopsTable extends Migration
             $table->string('place')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('address')->nullable();
-            $table->boolean('is_work')->nullable();
-            $table->string('image')->nullable();
+            $table->boolean('is_work')->nullable(); 
             $table->timestamps();
         });
     }

@@ -34,11 +34,15 @@ class CreateBillsTable extends Migration
 
             $table->bigInteger('order_id')->unsigned();
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+
             $table->bigInteger('customer_id')->unsigned();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
 
             $table->bigInteger('haulage_company_id')->unsigned();
             $table->foreign('haulage_company_id')->references('id')->on('haulage_companies')->onDelete('cascade');
+
+            $table->bigInteger('workshop_id')->unsigned();
+            $table->foreign('workshop_id')->references('id')->on('workshops')->onDelete('cascade');
             
             $table->timestamps();
         });

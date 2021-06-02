@@ -21,7 +21,6 @@ class CreateSerialClothesTable extends Migration
             $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
             $table->bigInteger('external_model_id')->unsigned();
             $table->foreign('external_model_id')->references('id')->on('external_models')->onDelete('cascade');
-            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

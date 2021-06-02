@@ -23,7 +23,6 @@ class CreateFrameworksTable extends Migration
             $table->string('worker_name')->nullable();
             $table->double('framework_quantity')->nullable();
             $table->double('needed_quantity')->nullable();
-            $table->string('image')->nullable(); 
             
             $table->bigInteger('model_id')->unsigned();
             $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');

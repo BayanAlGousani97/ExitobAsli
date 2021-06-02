@@ -17,8 +17,7 @@ class CreateHaulageCompaniesTable extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('phone_number')->nullable();
-            $table->string('address')->nullable();
-            $table->string('image')->nullable();
+            $table->string('address')->nullable(); 
             $table->timestamps();
         });
     }

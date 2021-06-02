@@ -24,8 +24,7 @@ class CreateExternalModelsTable extends Migration
             $table->bigInteger('brand_id')->unsigned();
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
             $table->bigInteger('models_warehouse_id')->unsigned();
-            $table->foreign('models_warehouse_id')->references('id')->on('models_warehouses')->onDelete('cascade');
-            $table->string('image')->nullable();
+            $table->foreign('models_warehouse_id')->references('id')->on('models_warehouses')->onDelete('cascade'); 
             $table->timestamps();
         });
     }
