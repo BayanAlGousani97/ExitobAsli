@@ -23,11 +23,11 @@ class CreateFrameworksTable extends Migration
             $table->string('worker_name')->nullable();
             $table->double('framework_quantity')->nullable();
             $table->double('needed_quantity')->nullable();
-
-            $table->bigInteger('design_id')->unsigned();
-            $table->foreign('design_id')->references('id')->on('designs')->onDelete('cascade');
-            $table->bigInteger('image_id')->unsigned();
-            $table->foreign('image_id')->references('id')->on('images')->onDelete('cascade');
+            $table->string('image')->nullable(); 
+            
+            $table->bigInteger('model_id')->unsigned();
+            $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
+         
             $table->timestamps();
         });
     }

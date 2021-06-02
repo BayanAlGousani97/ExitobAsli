@@ -18,8 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name')->nullable();
             $table->bigInteger('serial_clothe_id')->unsigned();
             $table->foreign('serial_clothe_id')->references('id')->on('serial_clothes')->onDelete('cascade');
-            $table->bigInteger('image_id')->unsigned();
-            $table->foreign('image_id')->references('id')->on('images')->onDelete('cascade');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

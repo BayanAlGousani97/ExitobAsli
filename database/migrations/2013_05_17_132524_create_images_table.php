@@ -19,8 +19,6 @@ class CreateImagesTable extends Migration
             $table->string('image')->nullable();
             $table->enum('object',['DESIGN','MODEL','USER','BRAND','CUSTOMER','EXPORTER','FRAMEWORK','WORKSHOPE','SERIAL_CLOTHES','PRODUCT','HAULAGE_COMPANY','EXTERNAL_MODEL','RAW_MATERIAL'])->nullable();
             $table->integer('object_id')->nullable();
-
-
             $table->timestamps();
         });
     }

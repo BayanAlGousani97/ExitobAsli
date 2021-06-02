@@ -14,14 +14,12 @@ class CreateExportersTable extends Migration
     public function up()
     {
         Schema::create('exporters', function (Blueprint $table) {
-            $table->id();
-            $table->double('number')->nullable();
+            $table->id(); 
             $table->string('name')->nullable();
             $table->string('type')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('address')->nullable();
-            $table->bigInteger('avatar')->unsigned();
-            $table->foreign('avatar')->references('id')->on('images')->onDelete('cascade');
+            $table->string('avatar')->nullable(); 
             $table->timestamps();
         });
     }

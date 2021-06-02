@@ -27,8 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('provider')->nullable();
             $table->string('provider_id')->nullable();  
             $table->text('brief')->nullable();
-            $table->bigInteger('avatar')->unsigned();
-            $table->foreign('avatar')->references('id')->on('images')->onDelete('cascade');
+            $table->string('avatar')->nullable();
             $table->rememberToken();
             $table->timestamps();
 

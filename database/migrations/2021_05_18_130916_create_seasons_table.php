@@ -15,8 +15,10 @@ class CreateSeasonsTable extends Migration
     {
         Schema::create('seasons', function (Blueprint $table) {
             $table->id();
-            $table->enum('name',['SUMMER' ,'WINTER'])->nullable();
+            $table->string('name')->nullable();
             $table->Date('year')->nullable();
+            $table->bigInteger('brand_id')->unsigned();
+            $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
             $table->timestamps();
         });
     }

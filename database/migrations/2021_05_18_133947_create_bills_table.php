@@ -15,7 +15,8 @@ class CreateBillsTable extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
-            $table->double('number')->nullable();
+            $table->string('type')->nullable();
+            $table->string('number')->nullable();
             $table->dateTime('publish_date')->nullable();
             $table->text('description')->nullable();
             $table->double('quantity')->nullable();
@@ -27,7 +28,10 @@ class CreateBillsTable extends Migration
             $table->double('net_cost')->nullable(); // Amount To Pay
             $table->double('pending_amount')->nullable();
             $table->double('payment_amount')->nullable();
-           
+            $table->double('tax')->nullable(); // "Dreba" Hhhhh >_<
+            $table->double('Customs_fees')->nullable(); // "jamrok" Hahaha 
+            $table->double('other_wages')->nullable();
+
             $table->bigInteger('order_id')->unsigned();
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
             $table->bigInteger('customer_id')->unsigned();

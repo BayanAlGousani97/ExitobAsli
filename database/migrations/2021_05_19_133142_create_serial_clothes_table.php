@@ -16,12 +16,12 @@ class CreateSerialClothesTable extends Migration
         Schema::create('serial_clothes', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
+            $table->integer('pieces_count')->nullable();
             $table->bigInteger('model_id')->unsigned();
             $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
             $table->bigInteger('external_model_id')->unsigned();
             $table->foreign('external_model_id')->references('id')->on('external_models')->onDelete('cascade');
-            $table->bigInteger('image_id')->unsigned();
-            $table->foreign('image_id')->references('id')->on('images')->onDelete('cascade');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

@@ -15,12 +15,14 @@ class CreateDesignsTable extends Migration
     {
         Schema::create('designs', function (Blueprint $table) {
             $table->id();
+            $table->string('number')->nullable();
             $table->string('name')->nullable();
             $table->enum('gender',['MALE' ,'FEMALE'])->nullable();
-            $table->string('phone_number')->nullable();
-            $table->string('address')->nullable();
-            $table->bigInteger('image')->unsigned();
-            $table->foreign('image')->references('id')->on('images')->onDelete('cascade');
+            $table->boolean('is_model')->default('0');
+            $table->dateTime('publish_date')->nullable();
+            $table->string('image')->nullable(); // Not Sure
+            $table->bigInteger('season_id')->unsigned();
+            $table->foreign('season_id')->references('id')->on('seasons')->onDelete('cascade');
             $table->timestamps();
         });
     }

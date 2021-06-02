@@ -23,8 +23,7 @@ class CreateCustomersTable extends Migration
             $table->double('bills_count')->nullable();
             $table->bigInteger('country_id')->unsigned();
             $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
-            $table->bigInteger('avatar')->unsigned();
-            $table->foreign('avatar')->references('id')->on('images')->onDelete('cascade');
+            $table->string('avatar')->nullable();
             $table->timestamps();
         });
     }
