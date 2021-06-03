@@ -15,4 +15,8 @@ class Customer extends Model
     public function orders(){
         return $this->hasMany('App\Order' , 'customer_id');
     }
+
+    public function city(){
+        return $this->belongsTo('App\City' , 'city_id');
+    }
 }

@@ -21,8 +21,8 @@ class CreateCustomersTable extends Migration
             $table->string('address')->nullable();
             $table->boolean('is_verified')->nullable();
             $table->double('bills_count')->nullable();
-            $table->bigInteger('country_id')->unsigned();
-            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
+            $table->bigInteger('city_id')->unsigned();
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
             $table->string('avatar')->nullable();
             $table->timestamps();
         });
