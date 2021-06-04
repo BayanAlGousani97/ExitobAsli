@@ -20,7 +20,7 @@ class Bill extends Model
         return $this->belongsTo('App\HaulageCompany' , 'haulage_company_id');
     }
   
-    public function workshop(){
-        return $this->belongsTo('App\Workshop' , 'workshop_id');
+    public function message(){
+        return $this->belongsTo('App\Message' , 'message_id');
     }
 }
