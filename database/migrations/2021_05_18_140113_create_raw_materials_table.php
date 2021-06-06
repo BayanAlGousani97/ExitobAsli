@@ -22,11 +22,9 @@ class CreateRawMaterialsTable extends Migration
             $table->string('grammage')->nullable();
             $table->double('quantity')->nullable();
 
-            $table->bigInteger('raw_material_warehouse_id')->unsigned();
-            $table->foreign('raw_material_warehouse_id')->references('id')->on('raw_material_warehouses')->onDelete('cascade');
+            $table->bigInteger('warehouse_id')->unsigned();
+            $table->foreign('warehouse_id')->references('id')->on('raw_material_warehouses')->onDelete('cascade');
 
-            $table->bigInteger('i_o_bill_id')->unsigned();
-            $table->foreign('i_o_bill_id')->references('id')->on('i_o_bills')->onDelete('cascade');
             $table->timestamps();
         });
     }
