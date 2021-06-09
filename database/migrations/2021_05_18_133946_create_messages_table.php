@@ -31,8 +31,10 @@ class CreateMessagesTable extends Migration
             $table->foreign('design_id')->references('id')->on('designs')->onDelete('cascade');
             $table->bigInteger('model_id')->unsigned();
             $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
+
             $table->bigInteger('framework_id')->unsigned();
             $table->foreign('framework_id')->references('id')->on('frameworks')->onDelete('cascade');
+            
             $table->timestamps();
         });
     }

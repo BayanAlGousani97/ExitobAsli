@@ -16,7 +16,7 @@ class CreateRawMatrialsValuesTable extends Migration
         Schema::create('raw_matrials_values', function (Blueprint $table) {
 
             $table->bigInteger('raw_material_id')->unsigned()->nullable();
-            $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
+            $table->foreign('raw_material_id')->references('id')->on('models')->onDelete('cascade');
 
             $table->bigInteger('value_id')->unsigned()->nullable();
             $table->foreign('value_id')->references('id')->on('option_values')->onDelete('cascade');
