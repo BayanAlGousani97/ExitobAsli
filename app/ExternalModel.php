@@ -16,6 +16,6 @@ class ExternalModel extends Model
     }
 
     public function serial_clothes(){
-        return $this->hasMany('App\SerialClothes' , 'external_model_id')
+        return $this->hasMany('App\SerialClothes' , 'external_model_id');
     }
 }

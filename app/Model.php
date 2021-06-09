@@ -27,4 +27,8 @@ class Model extends Model
         return $this->hasMany('App\Message','model_id');
     }
 
+    public function values(){
+        return $this->belongsToMany('App\OptionValue' , 'models_values' , 'model_id' , 'value_id');
+    }
+
 }

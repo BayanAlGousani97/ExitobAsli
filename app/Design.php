@@ -19,4 +19,12 @@ class Design extends Model
     public function messages(){
         return $this->hasMany('App\Message' , 'design_id');
     }
+
+    public function values(){
+        return $this->belongsToMany('App\OptionValue' , 'designs_values' , 'design_id' , 'value_id');
+    }
+
+    public function raw_matrials(){
+        return $this->belongsToMany('App\RawMaterial' , 'designs_raw_matrials' , 'design_id' , 'raw_material_id');
+    }
 }
