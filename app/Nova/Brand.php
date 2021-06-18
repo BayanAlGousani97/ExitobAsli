@@ -5,6 +5,7 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Fields\Text;
 
 class Brand extends Resource
 {
@@ -44,8 +45,8 @@ class Brand extends Resource
             Text::make('Name','name'),
             Text::make('Logo','logo'),
         ];
-    }
 
+    }
     /**
      * Get the cards available for the request.
      *
@@ -89,4 +90,5 @@ class Brand extends Resource
     {
         return [];
     }
+
 }
