@@ -2,19 +2,17 @@
 
 namespace App\Nova;
 
-use App\Exporter;
+
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use Symfony\Component\CssSelector\Parser\Handler\NumberHandler;
-use Symfony\Polyfill\Intl\Icu\NumberFormatter;
 
-class exporters extends Resource
+
+class Exporter extends Resource
 {
 
-    public static $model = Exporter::class;
+    public static $model = \App\Exporter::class;
     public static $showColumnBorders = true;
     public static $tableStyle = 'tight';
 
@@ -22,6 +20,7 @@ class exporters extends Resource
 
     public static $search = [
         'name',
+        'type'
 
     ];
 
@@ -33,13 +32,15 @@ class exporters extends Resource
 
             Text::make('Name','name')
             ->rules('required','max:50')
-            ->creationRules('unique:exporters,name'),
+            ->creationRules('unique:exporters,name')
+            ->updateRules('unique:exporters,name,{{resourceId}}'),
 
             Text::make('Type','type')->rules('required','max:50'),
 
-            Number::make('Phone Number' ,'phone_number')
+            Number::make('Phone Number','phone_number')
             ->rules('required' ,'min:4','max:13')
-            ->creationRules('unique:exporters,phone_number'),
+            ->creationRules('unique:exporters,phone_number')
+            ->updateRules('unique:exporters,phone_number,{{resourceId}}'),
 
             Text::make('Address', 'address')->rules('required','max:50'),
 

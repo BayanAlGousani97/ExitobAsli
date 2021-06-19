@@ -5,22 +5,22 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use App\RawMaterialWarehouse;
 use Laravel\Nova\Fields\Text;
 
-class raw_material_warehouse extends Resource
+class RawMaterialWarehouse extends Resource
 {
 
-    public static $model = RawMaterialWarehouse::class;
+    public static $model = \App\RawMaterialWarehouse::class;
     public static $tableStyle = 'tight';
     public static $showColumnBorders = true;
 
 
-    public static $title = 'id';
+    public static $title = 'name';
 
 
     public static $search = [
         'id',
+        'name'
     ];
 
     public function fields(Request $request)
@@ -30,10 +30,15 @@ class raw_material_warehouse extends Resource
 
             Text::make('Type','type')
             ->rules('required','max:100')
-            ->creationRules('unique:raw_material_warehouses,type'),
+            ->creationRules('unique:raw_material_warehouses,type')
+            ->updateRules('unique:raw_material_warehouses,type,{{resourceId}}'),
         ];
     }
     public static function label()
+    {
+        return __('Raw Material Warehouse');
+    }
+    public static function singularLabel()
     {
         return __('Raw Material Warehouse');
     }

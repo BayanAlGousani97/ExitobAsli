@@ -4,14 +4,12 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use App\ModelsWarehouse ;
 use Laravel\Nova\Fields\Text;
 
-class models_warehouse extends Resource
+class ModelsWarehouse extends Resource
 {
 
-    public static $model = ModelsWarehouse::class;
+    public static $model = \App\ModelsWarehouse::class;
     public static $showColumnBorders = true;
     public static $tableStyle = 'tight';
 
@@ -31,16 +29,22 @@ class models_warehouse extends Resource
             ID::make('ID', 'id')->sortable(),
 
             Text::make('Name', 'name')
-            ->rules('required','max:100')
-            ->creationRules('unique:models_warehouses,name'),
+            ->rules('required','max:50')
+            ->creationRules('unique:models_warehouses,name')
+            ->updateRules('unique:models_warehouses,name,{{resourceId}}'),
 
-            Text::make('Type','type')->rules('required','max:100')
+            Text::make('Type','type')->rules('required','max:50')
         ];
     }
     public static function label()
     {
         return __('Models Warehouse');
     }
+    public static function singularLabel()
+    {
+        return __('Models Warehouse');
+    }
+ 
 
 
     public function cards(Request $request)

@@ -12,6 +12,9 @@ class Season extends Model
     }
 
     public function designs(){
-        return $this->hasMany('App\Design' , 'season_id');
+        return $this->hasMany('App\Design','season_id');
     }
+    // protected $casts = [
+    //     'year' => 'datetime:YYYY',
+    // ];
 }
