@@ -19,11 +19,11 @@ class Message extends Model
         return $this->belongsTo('App\Framework','framework_id');
     }
 
-    public function workshop(){
+    public function send_workshop(){
         return $this->belongsTo('App\Workshop','sent_id');
     }
 
-    public function workshop(){
+    public function recive_workshop(){
         return $this->belongsTo('App\Workshop','received_id');
     }
 

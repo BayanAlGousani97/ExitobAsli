@@ -6,20 +6,17 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use PhpParser\Node\Expr\Cast\Double;
 
-class RawMaterial extends Resource
+class OptionValue extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\RawMaterial::class;
+    public static $model = \App\OptionValue::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -47,21 +44,9 @@ class RawMaterial extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Name','name'),
-            BelongsToMany::make('component','values','App\Nova\OptionValue'),
-            BelongsTo::make('exporter name','exporter','App\Nova\Exporter'),
-            Text::make('Type','type'),
-            Text::make('Code', 'code'),
-            Select::make('Measruing Unit')->options([
-                'METER' => 'Meter',
-                'KILOGRAM' => 'kilogram',
-                'GRAM' => 'gram',
-            ]),
-            Text::make('Grammage', 'grammage'),
-            Number::make('Quantity', 'quantity'),
-            Number::make('Price','price'),
-            BelongsTo::make('Warehous name', 'raw_matrial_warehouse','App\Nova\RawMaterialWarehouse'),
-
+            BelongsTo::make('key','option','App\Nova\Option'),
+            BelongsToMany::make('values','App\Nova\RawMaterial'),
+            Text::make('value','value'),
         ];
     }
 

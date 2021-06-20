@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class RawMaterial extends Model
 {
-    
+
     public function raw_matrial_warehouse(){
         return $this->belongsTo('App\RawMaterialWarehouse' , 'warehouse_id');
+    }
+    public function exporter(){
+        return $this->belongsTo('App\Exporter' , 'exporter_id');
     }
 
 
