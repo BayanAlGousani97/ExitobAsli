@@ -15,12 +15,11 @@ class RawMaterialWarehouse extends Resource
     public static $showColumnBorders = true;
 
 
-    public static $title = 'name';
+    public static $title = 'type';
 
 
     public static $search = [
-        'id',
-        'name'
+        'type'
     ];
 
     public function fields(Request $request)

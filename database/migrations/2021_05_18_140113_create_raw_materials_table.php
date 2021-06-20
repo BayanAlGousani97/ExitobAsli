@@ -21,6 +21,10 @@ class CreateRawMaterialsTable extends Migration
             $table->enum('measruing_unit',['METER','KILOGRAM','GRAM'])->nullable();
             $table->string('grammage')->nullable();
             $table->double('quantity')->nullable();
+            $table->double('price')->nullable();
+
+            $table->bigInteger('exporter_id')->unsigned();
+            $table->foreign('exporter_id')->references('id')->on('exporters')->onDelete('cascade');
 
             $table->bigInteger('warehouse_id')->unsigned();
             $table->foreign('warehouse_id')->references('id')->on('raw_material_warehouses')->onDelete('cascade');

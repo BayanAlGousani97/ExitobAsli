@@ -11,7 +11,7 @@ class Workshop extends Model
         return $this->hasMany('App\Message' , 'sent_id');
     }
 
-    public function messages(){
+    public function message(){
         return $this->hasMany('App\Message' , 'received_id');
     }
 }
