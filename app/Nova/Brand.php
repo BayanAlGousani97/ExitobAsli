@@ -15,6 +15,8 @@ class Brand extends Resource
      * @var string
      */
     public static $model = \App\Brand::class;
+    public static $showColumnBorders = true;
+    public static $tableStyle = 'tight';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -43,7 +45,7 @@ class Brand extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
              Text::make('Name','name')->rules('required','max:50'),
-              Text::make('Logo','logo')->rules('required','max:50'),
+              Text::make('Logo','logo')->rules('max:50'),
         ];
     }
 

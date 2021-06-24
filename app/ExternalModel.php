@@ -18,4 +18,7 @@ class ExternalModel extends Model
     public function serial_clothes(){
         return $this->hasMany('App\SerialClothes' , 'external_model_id');
     }
+    protected $casts = [
+     'purchase_date' => 'datetime:Y-m-d',
+        ];
 }
