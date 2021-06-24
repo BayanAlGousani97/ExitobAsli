@@ -5,14 +5,18 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Season extends Resource
+class HaulageCompany extends Resource
 {
-    public static $model = \App\Season::class;
+    /**
+     * The model the resource corresponds to.
+     *
+     * @var string
+     */
+    public static $model = \App\HaulageCompany::class;
     public static $title = 'name';
     public static $showColumnBorders = true;
     public static $tableStyle = 'tight';
@@ -21,25 +25,28 @@ class Season extends Resource
     ];
     public function fields(Request $request)
     {
-
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Name','name')->rules('required','max:50'),
-            Number::make('Year','year'),
-            BelongsTo::make('Company Name','brand','App\Nova\brand'),
+            Text::make('Company Name','name')->rules('required','max:50'),
+            Text::make('Address','address')->rules('required','max:50'),
+            Number::make('Phone Number','phone_number')
+            ->rules('required' ,'min:4','max:13')
+            ->creationRules('unique:haulage_companies,phone_number')
+            ->updateRules('unique:haulage_companies,phone_number,{{resourceId}}'),
+            BelongsTo::make('City','city','App\Nova\City'),  
+
         ];
     }
-
     public function cards(Request $request)
     {
         return [];
     }
+
     public function filters(Request $request)
     {
         return [];
     }
-
-    public function lenses(Request $request)
+ function lenses(Request $request)
     {
         return [];
     }
