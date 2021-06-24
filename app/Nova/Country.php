@@ -21,7 +21,7 @@ class Country extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'long_name';
 
     /**
      * The columns that should be searched.
@@ -29,7 +29,7 @@ class Country extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'long_name',
     ];
 
     /**
@@ -42,9 +42,9 @@ class Country extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            
+
             Text::make('Short Name','short_name')->rules('required','max:50'),
-           
+
             Text::make(' Long Name','long_name')->rules('required','max:50'),
         ];
     }

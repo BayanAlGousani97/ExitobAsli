@@ -11,7 +11,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\BelongsTo;
 
 class Season extends Resource
-{  
+{
     public static $model = \App\Season::class;
     public static $title = 'name';
     public static $search = [
@@ -23,7 +23,7 @@ class Season extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Name','name')->rules('required','max:50'),
-            Number::make('Year','year')->format('YYYY'),
+            Number::make('Year','year'),
             BelongsTo::make('Company Name','brand','App\Nova\brand'),
         ];
     }

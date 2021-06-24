@@ -43,7 +43,7 @@ class Brand extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
              Text::make('Name','name')->rules('required','max:50'),
-              Text::make('Logo','logo')->rules('required','max:50'),
+              Text::make('Logo','logo')->rules('max:50'),
         ];
     }
 

@@ -3,58 +3,58 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Avatar;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use PhpParser\Node\Expr\Cast\Double;
 
-class Workshop extends Resource
+class Customer extends Resource
 {
-
-    public static $model = \App\Workshop::class;
+    public static $model = \App\Customer::class;
     public static $tableStyle = 'tight';
     public static $showColumnBorders = true;
 
-    public static $title = 'id';
+
+    public static $title = 'first_name';
 
     public static $search = [
-        'id',
+        'first_name',
     ];
+
 
     public function fields(Request $request)
     {
-        return
-        [
+        return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Text::make('Name','name')->rules('required','max:50'),
+            Text::make('First Name','first_name')->rules('required','max:50'),
 
-            Text::make('Type','type')->rules('required','max:50'),
+            Text::make('Last Name','last_name')->rules('required','max:50'),
 
-            Select::make('Place')->options([
-                'In Company' => 'in company',
-                'Out Company' => 'out company',
-            ])->rules('required'),
-
-            Number::make('Phone Number','phone_number')
-            ->rules('required' ,'min:4','max:13')
+            Number::make('Phone number','phone_number')->rules('required' ,'min:4','max:13')
             ->creationRules('unique:workshops,phone_number')
             ->updateRules('unique:workshops,phone_number,{{resourceId}}'),
 
-            Text::make('Address','address'),
+            Text::make('Address', 'address')->rules('required','max:50'),
 
-            Boolean::make('Is Work!','is_work'),
+            Boolean::make('Is verified!','is_verified'),
+
+            Number::make('bills count' , 'bills_count'),
+
+            BelongsTo::make('city name' , 'city' , 'App\Nova\City'),
+
+            Avatar::make('image' , 'avatar'),
         ];
     }
-
 
     public function cards(Request $request)
     {
         return [];
     }
-
-
     public function filters(Request $request)
     {
         return [];
@@ -64,8 +64,6 @@ class Workshop extends Resource
     {
         return [];
     }
-
-
     public function actions(Request $request)
     {
         return [];

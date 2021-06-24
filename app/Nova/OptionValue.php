@@ -45,7 +45,7 @@ class OptionValue extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             BelongsTo::make('key','option','App\Nova\Option'),
-            BelongsToMany::make('values','App\Nova\RawMaterial'),
+           // BelongsToMany::make('values','App\Nova\RawMaterial'),
             Text::make('value','value'),
         ];
     }
