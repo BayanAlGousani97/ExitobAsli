@@ -7,10 +7,11 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\HasMany;
 
 class City extends Resource
 {
-    
+
     public static $model = \App\City::class;
     public static $showColumnBorders = true;
     public static $tableStyle = 'tight';
@@ -23,8 +24,10 @@ class City extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-             Text::make('Name','name')->rules('required','max:50'),
-            BelongsTo::make('ShortName','country','App\Nova\Country'),  
+            Text::make('Name','name')->rules('required','max:50'),
+            BelongsTo::make('ShortName','country','App\Nova\Country'),
+            HasMany::make('customers'),
+            HasMany::make('haulage_companies')
         ];
     }
     public static function label()

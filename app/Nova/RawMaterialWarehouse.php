@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Text;
@@ -31,6 +32,7 @@ class RawMaterialWarehouse extends Resource
             ->rules('required','max:100')
             ->creationRules('unique:raw_material_warehouses,type')
             ->updateRules('unique:raw_material_warehouses,type,{{resourceId}}'),
+            //HasMany::make('raw_matrials'),
         ];
     }
     public static function label()

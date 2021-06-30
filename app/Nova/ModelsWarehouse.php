@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 
@@ -33,7 +34,12 @@ class ModelsWarehouse extends Resource
             ->creationRules('unique:models_warehouses,name')
             ->updateRules('unique:models_warehouses,name,{{resourceId}}'),
 
-            Text::make('Type','type')->rules('required','max:50')
+            Text::make('Type','type')->rules('required','max:50'),
+
+
+///////////////////////problem in  HasMany::make('external_models'),
+           //HasMany::make('external_models'),
+           // HasMany::make('models')
         ];
     }
     public static function label()
@@ -44,7 +50,7 @@ class ModelsWarehouse extends Resource
     {
         return __('Models Warehouse');
     }
- 
+
 
 
     public function cards(Request $request)

@@ -2,18 +2,19 @@
 
 namespace App\Nova;
 
-use DateTime;
-use Hamcrest\Type\IsDouble;
+
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
-use Laravel\Nova\Fields\Currency;
+use Laravel\Nova\Fields\Currency as FieldsCurrency;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use PhpParser\Node\Expr\Cast\Double;
+use NovaAttachMany\AttachMany;
+use Pifpif\NovaTextCurrency\Currency;
+
 
 class RawMaterial extends Resource
 {
@@ -23,6 +24,8 @@ class RawMaterial extends Resource
      * @var string
      */
     public static $model = \App\RawMaterial::class;
+    public static $showColumnBorders = true;
+    public static $tableStyle = 'tight';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -51,30 +54,31 @@ class RawMaterial extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
 
-            Text::make('Name','name'),
+            Text::make('Name','name')->rules('required'),
 
-            //BelongsToMany::make('RawMaterial'),
+            AttachMany::make('color', 'values', OptionValue::class),
 
             BelongsTo::make('exporter name','exporter','App\Nova\Exporter'),
 
-            //BelongsToMany::make('Color','values','App\Nova\OptionValue'),
+            AttachMany::make('component', 'values', OptionValue::class),
 
             Text::make('Type','type'),
 
-            Text::make('Code', 'code'),
+            Text::make('Code', 'code')->rules('required')
+            ->creationRules('unique:raw_materials,code')
+            ->updateRules('unique:raw_materials,code,{{resourceId}}'),
 
             Select::make('Measruing Unit')->options([
                 'METER' => 'Meter',
                 'KILOGRAM' => 'kilogram',
                 'GRAM' => 'gram',
-            ]),
+            ])->rules('required'),
 
-            Text::make('Grammage', 'grammage'),
+            Text::make('Grammage', 'grammage')->rules('required'),
 
-            Number::make('Quantity', 'quantity'),
+            Number::make('Quantity', 'quantity')->rules('required'),
 
-            //Currency::make('Price','price'),
-
+            Currency::make('Price','price'),
             BelongsTo::make('Warehous name', 'raw_matrial_warehouse','App\Nova\RawMaterialWarehouse'),
 
         ];

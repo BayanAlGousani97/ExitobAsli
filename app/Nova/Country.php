@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Number;
@@ -26,6 +27,8 @@ class Country extends Resource
             Text::make('Short Name','short_name')->rules('required','max:50'),
 
             Text::make(' Long Name','long_name')->rules('required','max:50'),
+
+            HasMany::make('cities')
         ];
     }
     public static function label()

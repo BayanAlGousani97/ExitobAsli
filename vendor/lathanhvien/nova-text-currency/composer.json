@@ -1,0 +1,31 @@
+{
+    "name": "lathanhvien/nova-text-currency",
+    "description": "A Laravel Nova field to display currency number format.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "input",
+        "currency"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pifpif\\NovaTextCurrency\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pifpif\\NovaTextCurrency\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

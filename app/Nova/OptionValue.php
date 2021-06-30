@@ -17,13 +17,15 @@ class OptionValue extends Resource
      * @var string
      */
     public static $model = \App\OptionValue::class;
+    public static $showColumnBorders = true;
+    public static $tableStyle = 'tight';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'value';
 
     /**
      * The columns that should be searched.
@@ -31,7 +33,7 @@ class OptionValue extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'value',
     ];
 
     /**
@@ -45,7 +47,6 @@ class OptionValue extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             BelongsTo::make('key','option','App\Nova\Option'),
-           // BelongsToMany::make('values','App\Nova\RawMaterial'),
             Text::make('value','value'),
         ];
     }

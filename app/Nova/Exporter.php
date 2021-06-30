@@ -4,6 +4,7 @@ namespace App\Nova;
 
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
@@ -43,6 +44,9 @@ class Exporter extends Resource
             ->updateRules('unique:exporters,phone_number,{{resourceId}}'),
 
             Text::make('Address', 'address')->rules('required','max:50'),
+
+            HasMany::make('raw_materials'),
+            //HasMany::make('io_bills')
 
         ];
     }

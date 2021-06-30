@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Avatar;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Http\Requests\NovaRequest;
-use PhpParser\Node\Expr\Cast\Double;
+
 
 class Customer extends Resource
 {
@@ -48,6 +48,9 @@ class Customer extends Resource
             BelongsTo::make('city name' , 'city' , 'App\Nova\City'),
 
             Avatar::make('image' , 'avatar'),
+
+            //HasMany::make('bills'),
+            //HasMany::make('orders')
         ];
     }
 

@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -44,8 +45,10 @@ class Brand extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-             Text::make('Name','name')->rules('required','max:50'),
-              Text::make('Logo','logo')->rules('max:50'),
+            Text::make('Name','name')->rules('required','max:50'),
+            Text::make('Logo','logo')->rules('max:50'),
+            HasMany::make('seasons'),
+            HasMany::make('external_models')
         ];
     }
 

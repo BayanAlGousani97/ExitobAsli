@@ -8,7 +8,8 @@ class Brand extends Model
 {
     //
 
-    public function seasons(){
+    public function seasons()
+    {
         return $this->hasMany('App\Season' , 'brand_id');
     }
 

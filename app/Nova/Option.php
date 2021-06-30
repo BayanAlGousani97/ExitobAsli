@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -15,6 +16,8 @@ class Option extends Resource
      * @var string
      */
     public static $model = \App\Option::class;
+    public static $showColumnBorders = true;
+    public static $tableStyle = 'tight';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -29,7 +32,7 @@ class Option extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'key',
     ];
 
     /**
@@ -43,6 +46,7 @@ class Option extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('key','key'),
+           // HasMany::make('option_values')
         ];
     }
 
