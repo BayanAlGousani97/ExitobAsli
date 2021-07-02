@@ -16,9 +16,9 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->enum('status',['ORDERED','SHIPPED','PACKED'])->nullable();
-            $table->dateTime('order_date')->nullable();
-            $table->dateTime('shipped_date')->nullable();
-            $table->dateTime('packed_date')->nullable();
+            $table->date('order_date')->nullable();
+            $table->date('shipped_date')->nullable();
+            $table->date('packed_date')->nullable();
 
             $table->double('ordering_quantity')->nullable();
             $table->double('shipping_quantity')->nullable();

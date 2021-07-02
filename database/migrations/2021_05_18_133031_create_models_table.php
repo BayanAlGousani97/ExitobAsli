@@ -17,7 +17,7 @@ class CreateModelsTable extends Migration
             $table->id();
             $table->double('number')->nullable();
             $table->string('name')->nullable();
-            $table->dateTime('publish_datetime')->nullable();
+            $table->date('publish_datetime')->nullable();
             $table->double('pieces_count')->nullable();
             $table->text('description')->nullable();
             $table->bigInteger('design_id')->unsigned();
