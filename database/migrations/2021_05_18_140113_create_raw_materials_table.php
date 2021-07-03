@@ -18,6 +18,7 @@ class CreateRawMaterialsTable extends Migration
             $table->string('type')->nullable();
             $table->string('name')->nullable();
             $table->string('code')->nullable();
+            $table->string('color')->nullable();
             $table->enum('measruing_unit',['METER','KILOGRAM','GRAM'])->nullable();
             $table->string('grammage')->nullable();
             $table->double('quantity')->nullable();
