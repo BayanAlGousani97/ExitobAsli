@@ -59,8 +59,8 @@ class RawMaterial extends Resource
             Text::make('Name','name')->rules('required'),
 //            BelongsToMany::make('color','color',OptionValue::class),
 
-            Select::make('color', 'component')
-            ->options( OptionValue::query()->where('option_id','=',2)->pluck('value','option_id')->toArray()),
+          //  Select::make('color', 'component')
+         //   ->options( OptionValue::query()->where('option_id','=',2)->pluck('value','option_id')->toArray()),
 
             BelongsTo::make('exporter name','exporter','App\Nova\Exporter')->showCreateRelationButton(),
 
