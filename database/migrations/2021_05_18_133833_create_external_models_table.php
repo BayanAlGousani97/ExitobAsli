@@ -16,7 +16,7 @@ class CreateExternalModelsTable extends Migration
         Schema::create('external_models', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->dateTime('purchase_date')->nullable();
+            $table->date('purchase_date')->nullable();
             $table->double('quantity')->nullable();
             $table->double('single_cost')->nullable();
             $table->double('total_cost')->nullable();

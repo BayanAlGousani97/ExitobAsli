@@ -17,8 +17,8 @@ class CreateMessagesTable extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->string('content')->nullable();
-            $table->dateTime('sending_date')->nullable();
-            $table->dateTime('recieving_date')->nullable();
+            $table->date('sending_date')->nullable();
+            $table->date('recieving_date')->nullable();
             $table->double('sent_quantity')->nullable();
             $table->double('recieved_quantity')->nullable();
 

@@ -19,7 +19,7 @@ class CreateDesignsTable extends Migration
             $table->string('name')->nullable();
             $table->enum('gender',['MALE' ,'FEMALE'])->nullable();
             $table->boolean('is_model')->default('0');
-            $table->dateTime('publish_date')->nullable(); 
+            $table->date('publish_date')->nullable(); 
             $table->bigInteger('season_id')->unsigned();
             $table->foreign('season_id')->references('id')->on('seasons')->onDelete('cascade');
             $table->timestamps();

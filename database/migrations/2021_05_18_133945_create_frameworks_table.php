@@ -17,7 +17,7 @@ class CreateFrameworksTable extends Migration
             $table->id();
             $table->double('number')->nullable();
             $table->string('name')->nullable();
-            $table->dateTime('publish_datetime')->nullable();
+            $table->date('publish_datetime')->nullable();
             $table->double('fabric_quantities')->nullable();
             $table->double('weight')->nullable();
             $table->string('worker_name')->nullable();
