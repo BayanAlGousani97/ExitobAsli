@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c52058668bc6723b806997f4e4bd61d3",
+    "content-hash": "5acc988c5f175c5d9b593bb72b5c6f70",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -237,6 +237,60 @@
                 "source": "https://github.com/cakephp/chronos"
             },
             "time": "2021-06-17T13:49:10+00:00"
+        },
+        {
+            "name": "digital-creative/conditional-container",
+            "version": "v1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dcasia/conditional-container.git",
+                "reference": "3ed43442e3adca5f98c2f1b06cd87fd6cbd13092"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dcasia/conditional-container/zipball/3ed43442e3adca5f98c2f1b06cd87fd6cbd13092",
+                "reference": "3ed43442e3adca5f98c2f1b06cd87fd6cbd13092",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^3.12.0",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DigitalCreative\\ConditionalContainer\\ConditionalContainerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DigitalCreative\\ConditionalContainer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Milewski"
+                }
+            ],
+            "description": "Provides an easy way to conditionally show and hide fields in your Nova resources.",
+            "keywords": [
+                "conditional",
+                "dependency",
+                "dynamic",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/dcasia/conditional-container/issues",
+                "source": "https://github.com/dcasia/conditional-container/tree/v1.3.3"
+            },
+            "time": "2021-03-24T11:04:28+00:00"
         },
         {
             "name": "dillingham/nova-attach-many",

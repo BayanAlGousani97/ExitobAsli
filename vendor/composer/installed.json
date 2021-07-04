@@ -245,6 +245,63 @@
             "install-path": "../cakephp/chronos"
         },
         {
+            "name": "digital-creative/conditional-container",
+            "version": "v1.3.3",
+            "version_normalized": "1.3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dcasia/conditional-container.git",
+                "reference": "3ed43442e3adca5f98c2f1b06cd87fd6cbd13092"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dcasia/conditional-container/zipball/3ed43442e3adca5f98c2f1b06cd87fd6cbd13092",
+                "reference": "3ed43442e3adca5f98c2f1b06cd87fd6cbd13092",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^3.12.0",
+                "php": ">=7.1.0"
+            },
+            "time": "2021-03-24T11:04:28+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DigitalCreative\\ConditionalContainer\\ConditionalContainerServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DigitalCreative\\ConditionalContainer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Milewski"
+                }
+            ],
+            "description": "Provides an easy way to conditionally show and hide fields in your Nova resources.",
+            "keywords": [
+                "conditional",
+                "dependency",
+                "dynamic",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/dcasia/conditional-container/issues",
+                "source": "https://github.com/dcasia/conditional-container/tree/v1.3.3"
+            },
+            "install-path": "../digital-creative/conditional-container"
+        },
+        {
             "name": "dillingham/nova-attach-many",
             "version": "1.3.0",
             "version_normalized": "1.3.0.0",

@@ -20,8 +20,6 @@ use Composer\Semver\VersionParser;
 
 
 
-
-
 class InstalledVersions
 {
 private static $installed = array (
@@ -32,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5f7784bcfb04a14fb69db1cec1336b75666a7637',
+    'reference' => 'f91e168eb4ff02ba3987db9fb43e2732a8b9b7fa',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -86,6 +84,15 @@ private static $installed = array (
       array (
         0 => '*',
       ),
+    ),
+    'digital-creative/conditional-container' => 
+    array (
+      'pretty_version' => 'v1.3.3',
+      'version' => '1.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3ed43442e3adca5f98c2f1b06cd87fd6cbd13092',
     ),
     'dillingham/nova-attach-many' => 
     array (
@@ -502,7 +509,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5f7784bcfb04a14fb69db1cec1336b75666a7637',
+      'reference' => 'f91e168eb4ff02ba3987db9fb43e2732a8b9b7fa',
     ),
     'laravel/nova' => 
     array (
@@ -1368,6 +1375,7 @@ foreach (self::getInstalled() as $installed) {
 $packages[] = array_keys($installed['versions']);
 }
 
+
 if (1 === \count($packages)) {
 return $packages[0];
 }
@@ -1531,23 +1539,9 @@ return $installed[0]['root'];
 
 
 
-
 public static function getRawData()
 {
-@trigger_error('getRawData only returns the first dataset loaded, which may not be what you expect. Use getAllRawData() instead which returns all datasets for all autoloaders present in the process.', E_USER_DEPRECATED);
-
 return self::$installed;
-}
-
-
-
-
-
-
-
-public static function getAllRawData()
-{
-return self::getInstalled();
 }
 
 
@@ -1573,7 +1567,6 @@ public static function reload($data)
 self::$installed = $data;
 self::$installedByVendor = array();
 }
-
 
 
 

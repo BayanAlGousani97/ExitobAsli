@@ -16,10 +16,10 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
-        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '56823cacd97af379eceaf82ad00b928f' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/lib/bcmath.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -31,12 +31,12 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
+        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
+        'ed33d19cba977f2a7e321f120d94a872' => __DIR__ . '/..' . '/spatie/once/src/functions.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        'ed33d19cba977f2a7e321f120d94a872' => __DIR__ . '/..' . '/spatie/once/src/functions.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
     );
 
@@ -172,6 +172,7 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\' => 16,
+            'DigitalCreative\\ConditionalContainer\\' => 37,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -519,6 +520,10 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         array (
             0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
         ),
+        'DigitalCreative\\ConditionalContainer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/digital-creative/conditional-container/src',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
@@ -600,6 +605,7 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'App\\Nova\\ModelsWarehouse' => __DIR__ . '/../..' . '/app/Nova/ModelsWarehouse.php',
         'App\\Nova\\Option' => __DIR__ . '/../..' . '/app/Nova/Option.php',
         'App\\Nova\\OptionValue' => __DIR__ . '/../..' . '/app/Nova/OptionValue.php',
+        'App\\Nova\\Order' => __DIR__ . '/../..' . '/app/Nova/Order.php',
         'App\\Nova\\RawMaterial' => __DIR__ . '/../..' . '/app/Nova/RawMaterial.php',
         'App\\Nova\\RawMaterialWarehouse' => __DIR__ . '/../..' . '/app/Nova/RawMaterialWarehouse.php',
         'App\\Nova\\Resource' => __DIR__ . '/../..' . '/app/Nova/Resource.php',
@@ -796,6 +802,9 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'DigitalCreative\\ConditionalContainer\\ConditionalContainer' => __DIR__ . '/..' . '/digital-creative/conditional-container/src/ConditionalContainer.php',
+        'DigitalCreative\\ConditionalContainer\\ConditionalContainerServiceProvider' => __DIR__ . '/..' . '/digital-creative/conditional-container/src/ConditionalContainerServiceProvider.php',
+        'DigitalCreative\\ConditionalContainer\\HasConditionalContainer' => __DIR__ . '/..' . '/digital-creative/conditional-container/src/HasConditionalContainer.php',
         'Doctrine\\Common\\Cache\\Cache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php',
         'Doctrine\\Common\\Cache\\CacheProvider' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php',
         'Doctrine\\Common\\Cache\\ClearableCache' => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache/ClearableCache.php',

@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5f7784bcfb04a14fb69db1cec1336b75666a7637',
+    'reference' => 'f91e168eb4ff02ba3987db9fb43e2732a8b9b7fa',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -60,6 +60,15 @@
       array (
         0 => '*',
       ),
+    ),
+    'digital-creative/conditional-container' => 
+    array (
+      'pretty_version' => 'v1.3.3',
+      'version' => '1.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3ed43442e3adca5f98c2f1b06cd87fd6cbd13092',
     ),
     'dillingham/nova-attach-many' => 
     array (
@@ -476,7 +485,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5f7784bcfb04a14fb69db1cec1336b75666a7637',
+      'reference' => 'f91e168eb4ff02ba3987db9fb43e2732a8b9b7fa',
     ),
     'laravel/nova' => 
     array (

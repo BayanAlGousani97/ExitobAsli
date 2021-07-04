@@ -21,6 +21,15 @@ class Order extends Model
 
     public function external_models(){
         return $this->belongsToMany('App\ExternalModel' , 'external_models_orders' , 'order_id' , 'external_model_id');
-    }
+    }    
+//protected $casts = [
+  //      'order_date' => 'datetime:YYYY',
+   // ];
+   protected $casts = [
+    'order_date' => 'datetime:Y-m-d',
+    'packed_date' => 'datetime:Y-m-d',
+    'shipped_date' => 'datetime:Y-m-d',
+   ];
+  
 
 }
