@@ -13,4 +13,5 @@ class OptionValue extends Model
     public function rawvalues(){
         return $this->belongsToMany('App\RawMaterial', 'raw_matrials_values', 'value_id', 'raw_material_id');
     }
+
 }

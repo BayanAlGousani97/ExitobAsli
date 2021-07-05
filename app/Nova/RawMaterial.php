@@ -3,6 +3,8 @@
 namespace App\Nova;
 
 
+use App\Option;
+use App\OptionValue;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
@@ -55,12 +57,14 @@ class RawMaterial extends Resource
             ID::make(__('ID'), 'id')->sortable(),
 
             Text::make('Name','name')->rules('required'),
+//            BelongsToMany::make('color','color',OptionValue::class),
 
-            AttachMany::make('color', 'values', OptionValue::class),
+          //  Select::make('color', 'component')
+         //   ->options( OptionValue::query()->where('option_id','=',2)->pluck('value','option_id')->toArray()),
 
-            BelongsTo::make('exporter name','exporter','App\Nova\Exporter'),
+            BelongsTo::make('exporter name','exporter','App\Nova\Exporter')->showCreateRelationButton(),
 
-            AttachMany::make('component', 'values', OptionValue::class),
+//           AttachMany::make('component', 'values', \App\Nova\OptionValue::class),
 
             Text::make('Type','type'),
 
@@ -79,7 +83,7 @@ class RawMaterial extends Resource
             Number::make('Quantity', 'quantity')->rules('required'),
 
             Currency::make('Price','price'),
-            BelongsTo::make('Warehous name', 'raw_matrial_warehouse','App\Nova\RawMaterialWarehouse'),
+            BelongsTo::make('Warehous name', 'raw_matrial_warehouse','App\Nova\RawMaterialWarehouse')->showCreateRelationButton(),
 
         ];
     }

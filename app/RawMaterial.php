@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Nova\Fields\BelongsTo;
 
 class RawMaterial extends Model
 {
@@ -19,8 +20,15 @@ class RawMaterial extends Model
         return $this->belongsToMany('App\OptionValue' , 'raw_matrials_values' , 'raw_material_id' , 'value_id');
     }
 
+//
+//    public function color(){
+//        return $this->belongsTo(OptionValue::class , 'raw_material_id' , 'value_id');
+//    }
+
+
     public function bills(){
         return $this->belongsToMany('App\IOBill' , 'raw_matrials_bills' , 'raw_material_id' , 'bill_id');
     }
+
 
 }
