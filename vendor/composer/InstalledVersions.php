@@ -1914,5 +1914,4 @@ class InstalledVersions
 
         return $installed;
     }
->>>>>>> 72616b99c3a77d215317351453483e4faabff97b
 }

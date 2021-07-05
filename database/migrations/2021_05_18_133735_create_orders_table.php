@@ -26,6 +26,9 @@ class CreateOrdersTable extends Migration
 >>>>>>> 72616b99c3a77d215317351453483e4faabff97b
             $table->double('ordering_quantity')->nullable();
             $table->boolean('packed')->nullable();
+            $table->boolean('done')->nullable();
+            $table->boolean('available')->nullable();
+            $table->boolean('packed')->nullable();
             $table->double('packing_quantity')->nullable();
             $table->dateTime('packed_date')->nullable();
             $table->boolean('Haulage')->nullable(); 
