@@ -54,7 +54,7 @@ class Design extends Resource
                 'Female' => 'Female', 
             ])->rules('required'),
             Boolean::make('Is Model!','is_model')->rules('required'),
-            Date::make('Design Date','publish_date')->rules('required'),
+            Date::make('Design Date','DATE')->rules('required'),
             BelongsTo::make('Season' , 'Season' , 'App\Nova\Season'),
 
         ];

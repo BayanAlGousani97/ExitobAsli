@@ -16,18 +16,14 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-<<<<<<< HEAD
-=======
-        '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
-        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
->>>>>>> 72616b99c3a77d215317351453483e4faabff97b
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '56823cacd97af379eceaf82ad00b928f' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/lib/bcmath.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -603,6 +599,7 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'App\\Nova\\City' => __DIR__ . '/../..' . '/app/Nova/City.php',
         'App\\Nova\\Country' => __DIR__ . '/../..' . '/app/Nova/Country.php',
         'App\\Nova\\Customer' => __DIR__ . '/../..' . '/app/Nova/Customer.php',
+        'App\\Nova\\Design' => __DIR__ . '/../..' . '/app/Nova/Design.php',
         'App\\Nova\\Exporter' => __DIR__ . '/../..' . '/app/Nova/Exporter.php',
         'App\\Nova\\ExternalModel' => __DIR__ . '/../..' . '/app/Nova/ExternalModel.php',
         'App\\Nova\\HaulageCompany' => __DIR__ . '/../..' . '/app/Nova/HaulageCompany.php',
