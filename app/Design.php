@@ -8,7 +8,7 @@ class Design extends Model
 {
     //
     protected $casts = [
-        'day' => 'publish_date'
+        'publish_date' => 'date'
     ];
 
     public function season(){

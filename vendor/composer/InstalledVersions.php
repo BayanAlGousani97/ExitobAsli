@@ -20,6 +20,8 @@ use Composer\Semver\VersionParser;
 
 
 
+
+
 class InstalledVersions
 {
 private static $installed = array (
@@ -30,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd0b0e510ebf8348d0e620f912561e0348a7579ec',
+    'reference' => 'ceaafcc06894bbc99d2f7e46a2263e1e9f18202f',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -486,6 +488,15 @@ private static $installed = array (
         0 => 'v7.30.4',
       ),
     ),
+    'kirschbaum-development/nova-inline-relationship' => 
+    array (
+      'pretty_version' => '0.3.0',
+      'version' => '0.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e1d05de11ae1271e99ba20597fb6988a0f402e3e',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -509,7 +520,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd0b0e510ebf8348d0e620f912561e0348a7579ec',
+      'reference' => 'ceaafcc06894bbc99d2f7e46a2263e1e9f18202f',
     ),
     'laravel/nova' => 
     array (
@@ -864,8 +875,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1375,7 +1386,6 @@ foreach (self::getInstalled() as $installed) {
 $packages[] = array_keys($installed['versions']);
 }
 
-
 if (1 === \count($packages)) {
 return $packages[0];
 }
@@ -1539,9 +1549,23 @@ return $installed[0]['root'];
 
 
 
+
 public static function getRawData()
 {
+@trigger_error('getRawData only returns the first dataset loaded, which may not be what you expect. Use getAllRawData() instead which returns all datasets for all autoloaders present in the process.', E_USER_DEPRECATED);
+
 return self::$installed;
+}
+
+
+
+
+
+
+
+public static function getAllRawData()
+{
+return self::getInstalled();
 }
 
 
@@ -1567,6 +1591,7 @@ public static function reload($data)
 self::$installed = $data;
 self::$installedByVendor = array();
 }
+
 
 
 

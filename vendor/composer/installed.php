@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'd0b0e510ebf8348d0e620f912561e0348a7579ec',
+    'reference' => 'ceaafcc06894bbc99d2f7e46a2263e1e9f18202f',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -462,6 +462,15 @@
         0 => 'v7.30.4',
       ),
     ),
+    'kirschbaum-development/nova-inline-relationship' => 
+    array (
+      'pretty_version' => '0.3.0',
+      'version' => '0.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e1d05de11ae1271e99ba20597fb6988a0f402e3e',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -485,7 +494,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'd0b0e510ebf8348d0e620f912561e0348a7579ec',
+      'reference' => 'ceaafcc06894bbc99d2f7e46a2263e1e9f18202f',
     ),
     'laravel/nova' => 
     array (
@@ -840,8 +849,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 

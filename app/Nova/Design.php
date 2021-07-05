@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
@@ -51,11 +52,12 @@ class Design extends Resource
             Number::make('Number' , 'number')->rules('required'),
             Select::make('Gender')->options([
                 'Male' => 'Male',
-                'Female' => 'Female', 
+                'Female' => 'Female',
             ])->rules('required'),
             Boolean::make('Is Model!','is_model')->rules('required'),
-            Date::make('Design Date','DATE')->rules('required'),
+            Date::make('Design Date','publish_date')->rules('required'),
             BelongsTo::make('Season' , 'Season' , 'App\Nova\Season'),
+//            HasMany::make('Models', 'models', Model::class)->inline(),
 
         ];
     }

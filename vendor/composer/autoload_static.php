@@ -17,8 +17,8 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '56823cacd97af379eceaf82ad00b928f' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/lib/bcmath.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
@@ -29,11 +29,11 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         'ed33d19cba977f2a7e321f120d94a872' => __DIR__ . '/..' . '/spatie/once/src/functions.php',
+        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -137,6 +137,10 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Nova\\' => 13,
+        ),
+        'K' => 
+        array (
+            'KirschbaumDevelopment\\NovaInlineRelationship\\' => 45,
         ),
         'I' => 
         array (
@@ -439,6 +443,10 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'Laravel\\Nova\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/nova/src',
+        ),
+        'KirschbaumDevelopment\\NovaInlineRelationship\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src',
         ),
         'Illuminate\\Foundation\\Auth\\' => 
         array (
@@ -2894,6 +2902,31 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'IntlDateFormatter' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/IntlDateFormatter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Contracts\\RelationshipObservable' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Contracts/RelationshipObservable.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\ContractMissingException' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/ContractMissingException.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\IncorrectRelationshipFormat' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/IncorrectRelationshipFormat.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\InvalidRelationshipName' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/InvalidRelationshipName.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\UnsupportedNestedRelationship' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/UnsupportedNestedRelationship.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\UnsupportedRelationshipType' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/UnsupportedRelationshipType.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Helpers\\NovaInlineRelationshipHelper' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Helpers/NovaInlineRelationshipHelper.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Integrations\\Contracts\\ThirdPartyContract' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Integrations/Contracts/ThirdPartyContract.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Integrations\\Field' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Integrations/Field.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Integrations\\Integrate' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Integrations/Integrate.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Integrations\\NovaDependencyContainer' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Integrations/NovaDependencyContainer.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Integrations\\Panel' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Integrations/Panel.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Integrations\\ThirdParty' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Integrations/ThirdParty.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\NovaInlineRelationship' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/NovaInlineRelationship.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\NovaInlineRelationshipRequest' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/NovaInlineRelationshipRequest.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\NovaInlineRelationshipServiceProvider' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/NovaInlineRelationshipServiceProvider.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\BaseObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/BaseObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\BelongsToObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/BelongsToObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\HasManyObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/HasManyObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\HasOneObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/HasOneObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\MorphManyObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/MorphManyObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\MorphOneObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/MorphOneObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Observers\\NovaInlineRelationshipObserver' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Observers/NovaInlineRelationshipObserver.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Rules\\RelationshipRule' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Rules/RelationshipRule.php',
+        'KirschbaumDevelopment\\NovaInlineRelationship\\Traits\\RequireRelationship' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Traits/RequireRelationship.php',
         'Laravel\\Nova\\Actions\\Action' => __DIR__ . '/..' . '/laravel/nova/src/Actions/Action.php',
         'Laravel\\Nova\\Actions\\ActionEvent' => __DIR__ . '/..' . '/laravel/nova/src/Actions/ActionEvent.php',
         'Laravel\\Nova\\Actions\\ActionMethod' => __DIR__ . '/..' . '/laravel/nova/src/Actions/ActionMethod.php',
