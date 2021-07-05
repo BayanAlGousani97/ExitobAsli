@@ -1,21 +1,20 @@
 <?php
 
-/*
- * This file is part of Composer.
- *
- * (c) Nils Adermann <naderman@naderman.de>
- *     Jordi Boggiano <j.boggiano@seld.be>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
+
+
+
+
+
+
+
+
+
 
 namespace Composer;
 
 use Composer\Autoload\ClassLoader;
 use Composer\Semver\VersionParser;
 
-<<<<<<< HEAD
 
 
 
@@ -31,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'f91e168eb4ff02ba3987db9fb43e2732a8b9b7fa',
+    'reference' => 'd0b0e510ebf8348d0e620f912561e0348a7579ec',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -510,7 +509,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'f91e168eb4ff02ba3987db9fb43e2732a8b9b7fa',
+      'reference' => 'd0b0e510ebf8348d0e620f912561e0348a7579ec',
     ),
     'laravel/nova' => 
     array (
@@ -519,7 +518,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '784ccdf488f403818c2fa5aa0c5e2ddd8209950f',
+      'reference' => '57df3a641c60b10ba0ea05700f95c4aa9651c7eb',
     ),
     'laravel/tinker' => 
     array (
@@ -586,12 +585,12 @@ private static $installed = array (
     ),
     'monolog/monolog' => 
     array (
-      'pretty_version' => '2.2.0',
-      'version' => '2.2.0.0',
+      'pretty_version' => '2.3.0',
+      'version' => '2.3.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '1cb1cde8e8dd0f70cc0fe51354a59acad9302084',
+      'reference' => 'df991fd88693ab703aa403413d83e15f688dae33',
     ),
     'moontoast/math' => 
     array (
@@ -617,21 +616,21 @@ private static $installed = array (
     ),
     'nesbot/carbon' => 
     array (
-      'pretty_version' => '2.49.0',
-      'version' => '2.49.0.0',
+      'pretty_version' => '2.50.0',
+      'version' => '2.50.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '93d9db91c0235c486875d22f1e08b50bdf3e6eee',
+      'reference' => 'f47f17d17602b2243414a44ad53d9f8b9ada5fdb',
     ),
     'nikic/php-parser' => 
     array (
-      'pretty_version' => 'v4.10.5',
-      'version' => '4.10.5.0',
+      'pretty_version' => 'v4.11.0',
+      'version' => '4.11.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4432ba399e47c66624bc73c8c0f811e5c109576f',
+      'reference' => 'fe14cf3672a149364fb66dfe11bf6549af899f94',
     ),
     'nunomaduro/collision' => 
     array (
@@ -865,8 +864,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0.0',
-        1 => '1.0',
+        0 => '1.0',
+        1 => '1.0.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1076,12 +1075,12 @@ private static $installed = array (
     ),
     'symfony/error-handler' => 
     array (
-      'pretty_version' => 'v5.3.0',
-      'version' => '5.3.0.0',
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0e6768b8c0dcef26df087df2bbbaa143867a59b2',
+      'reference' => '43323e79c80719e8a4674e33484bca98270d223f',
     ),
     'symfony/event-dispatcher' => 
     array (
@@ -1128,21 +1127,21 @@ private static $installed = array (
     ),
     'symfony/http-foundation' => 
     array (
-      'pretty_version' => 'v5.3.2',
-      'version' => '5.3.2.0',
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7b6dd714d95106b831aaa7f3c9c612ab886516bd',
+      'reference' => '0e45ab1574caa0460d9190871a8ce47539e40ccf',
     ),
     'symfony/http-kernel' => 
     array (
-      'pretty_version' => 'v5.3.2',
-      'version' => '5.3.2.0',
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e7021165d9dbfb4051296b8de827e92c8a7b5c87',
+      'reference' => '90ad9f4b21ddcb8ebe9faadfcca54929ad23f9f8',
     ),
     'symfony/intl' => 
     array (
@@ -1272,21 +1271,21 @@ private static $installed = array (
     ),
     'symfony/string' => 
     array (
-      'pretty_version' => 'v5.3.2',
-      'version' => '5.3.2.0',
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0732e97e41c0a590f77e231afc16a327375d50b0',
+      'reference' => 'bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1',
     ),
     'symfony/translation' => 
     array (
-      'pretty_version' => 'v5.3.2',
-      'version' => '5.3.2.0',
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7e2603bcc598e14804c4d2359d8dc4ee3c40391b',
+      'reference' => '380b8c9e944d0e364b25f28e8e555241eb49c01c',
     ),
     'symfony/translation-contracts' => 
     array (
@@ -1306,12 +1305,12 @@ private static $installed = array (
     ),
     'symfony/var-dumper' => 
     array (
-      'pretty_version' => 'v5.3.2',
-      'version' => '5.3.2.0',
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '905a22c68b292ffb6f20d7636c36b220d1fba5ae',
+      'reference' => '46aa709affb9ad3355bd7a810f9662d71025c384',
     ),
     'theseer/tokenizer' => 
     array (
@@ -1594,6 +1593,7 @@ $installed[] = self::$installed;
 
 return $installed;
 }
+<<<<<<< HEAD
 =======
 /**
  * This class is copied in every Composer installed project and available to all
@@ -1914,4 +1914,6 @@ class InstalledVersions
 
         return $installed;
     }
+=======
+>>>>>>> ceaafcc06894bbc99d2f7e46a2263e1e9f18202f
 }

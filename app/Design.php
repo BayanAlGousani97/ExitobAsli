@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Design extends Model
 {
     //
+    protected $casts = [
+        'day' => 'publish_date'
+    ];
 
     public function season(){
         return $this->belongsTo('App\Season' , 'season_id');

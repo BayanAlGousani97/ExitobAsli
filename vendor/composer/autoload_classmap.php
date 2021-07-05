@@ -36,6 +36,7 @@ return array(
     'App\\Nova\\City' => $baseDir . '/app/Nova/City.php',
     'App\\Nova\\Country' => $baseDir . '/app/Nova/Country.php',
     'App\\Nova\\Customer' => $baseDir . '/app/Nova/Customer.php',
+    'App\\Nova\\Design' => $baseDir . '/app/Nova/Design.php',
     'App\\Nova\\Exporter' => $baseDir . '/app/Nova/Exporter.php',
     'App\\Nova\\ExternalModel' => $baseDir . '/app/Nova/ExternalModel.php',
     'App\\Nova\\HaulageCompany' => $baseDir . '/app/Nova/HaulageCompany.php',
