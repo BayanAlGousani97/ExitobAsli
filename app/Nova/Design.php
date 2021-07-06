@@ -11,7 +11,9 @@ use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Date ;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use OptimistDigital\MultiselectField\Multiselect;
 
 class Design extends Resource
 {
@@ -45,7 +47,7 @@ class Design extends Resource
      * @return array
      */
     public function fields(Request $request)
-    {
+    {    
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Name','name')->rules('required','max:50'),
@@ -54,11 +56,13 @@ class Design extends Resource
                 'Male' => 'Male',
                 'Female' => 'Female',
             ])->rules('required'),
-            Boolean::make('Is Model!','is_model')->rules('required'),
             Date::make('Design Date','publish_date')->rules('required'),
             BelongsTo::make('Season' , 'Season' , 'App\Nova\Season'),
-//            HasMany::make('Models', 'models', Model::class)->inline(),
-
+            Boolean::make('Is Model!','is_model')->rules('required'),
+            // TODO ..  
+            Multiselect::make('Raw Matrials', 'raw_matrials')->belongsToMany(RawMaterial::class),  
+            
+           
         ];
     }
 

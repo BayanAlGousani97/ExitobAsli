@@ -16,29 +16,23 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-<<<<<<< HEAD
-        '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
-        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-=======
->>>>>>> ceaafcc06894bbc99d2f7e46a2263e1e9f18202f
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '56823cacd97af379eceaf82ad00b928f' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/lib/bcmath.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '53c7be3308b5aa229d03a4dfcf6ca18d' => __DIR__ . '/..' . '/symfony/intl/Resources/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        'ed33d19cba977f2a7e321f120d94a872' => __DIR__ . '/..' . '/spatie/once/src/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '34122c0574b76bf21c9a8db62b5b9cf3' => __DIR__ . '/..' . '/cakephp/chronos/src/carbon_compat.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        'ed33d19cba977f2a7e321f120d94a872' => __DIR__ . '/..' . '/spatie/once/src/functions.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
@@ -122,6 +116,8 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         ),
         'O' => 
         array (
+            'OptimistDigital\\NovaTranslationsLoader\\' => 39,
+            'OptimistDigital\\MultiselectField\\' => 33,
             'Opis\\Closure\\' => 13,
         ),
         'N' => 
@@ -148,8 +144,13 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         array (
             'KirschbaumDevelopment\\NovaInlineRelationship\\' => 45,
         ),
+        'J' => 
+        array (
+            'Juul\\Fields\\' => 12,
+        ),
         'I' => 
         array (
+            'IziDev\\ConditionalField\\' => 24,
             'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\' => 11,
         ),
@@ -402,6 +403,14 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
+        'OptimistDigital\\NovaTranslationsLoader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/optimistdigital/nova-translations-loader/src',
+        ),
+        'OptimistDigital\\MultiselectField\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/optimistdigital/nova-multiselect-field/src',
+        ),
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -453,6 +462,14 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'KirschbaumDevelopment\\NovaInlineRelationship\\' => 
         array (
             0 => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src',
+        ),
+        'Juul\\Fields\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/martinjuul/many-to-many/src',
+        ),
+        'IziDev\\ConditionalField\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/izi-dev/nova-conditional-field/src',
         ),
         'Illuminate\\Foundation\\Auth\\' => 
         array (
@@ -611,6 +628,7 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'App\\ModelsWarehouse' => __DIR__ . '/../..' . '/app/ModelsWarehouse.php',
         'App\\Nova\\Brand' => __DIR__ . '/../..' . '/app/Nova/Brand.php',
         'App\\Nova\\City' => __DIR__ . '/../..' . '/app/Nova/City.php',
+        'App\\Nova\\CompanyModel' => __DIR__ . '/../..' . '/app/Nova/CompanyModel.php',
         'App\\Nova\\Country' => __DIR__ . '/../..' . '/app/Nova/Country.php',
         'App\\Nova\\Customer' => __DIR__ . '/../..' . '/app/Nova/Customer.php',
         'App\\Nova\\Design' => __DIR__ . '/../..' . '/app/Nova/Design.php',
@@ -2907,7 +2925,22 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'IntlDateFormatter' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/IntlDateFormatter.php',
+        'IziDev\\ConditionalField\\ConditionalFieldProvider' => __DIR__ . '/..' . '/izi-dev/nova-conditional-field/src/ConditionalFieldProvider.php',
+        'IziDev\\ConditionalField\\Http\\Controllers\\ConditionController' => __DIR__ . '/..' . '/izi-dev/nova-conditional-field/src/Http/Controllers/ConditionController.php',
+        'IziDev\\ConditionalField\\Http\\Middleware\\Authorize' => __DIR__ . '/..' . '/izi-dev/nova-conditional-field/src/Http/Middleware/Authorize.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Juul\\Fields\\BelongsToMany' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/BelongsToMany.php',
+        'Juul\\Fields\\FieldServiceProvider' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/FieldServiceProvider.php',
+        'Juul\\Fields\\Http\\Controllers\\AttachableController' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/Http/Controllers/AttachableController.php',
+        'Juul\\Fields\\Http\\Controllers\\AttachedController' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/Http/Controllers/AttachedController.php',
+        'Juul\\Fields\\Http\\Controllers\\InteractsWithResourceRequest' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/Http/Controllers/InteractsWithResourceRequest.php',
+        'Juul\\Fields\\Http\\Controllers\\PivotFieldController' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/Http/Controllers/PivotFieldController.php',
+        'Juul\\Fields\\Http\\Controllers\\PivotValidateController' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/Http/Controllers/PivotValidateController.php',
+        'Juul\\Fields\\Http\\Controllers\\ResolvesFields' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/Http/Controllers/ResolvesFields.php',
+        'Juul\\Fields\\ManyToMany' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/ManyToMany.php',
+        'Juul\\Fields\\MorphToMany' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/MorphToMany.php',
+        'Juul\\Fields\\MorphedByMany' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/MorphedByMany.php',
+        'Juul\\Fields\\RelatableAttachment' => __DIR__ . '/..' . '/martinjuul/many-to-many/src/RelatableAttachment.php',
         'KirschbaumDevelopment\\NovaInlineRelationship\\Contracts\\RelationshipObservable' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Contracts/RelationshipObservable.php',
         'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\ContractMissingException' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/ContractMissingException.php',
         'KirschbaumDevelopment\\NovaInlineRelationship\\Exceptions\\IncorrectRelationshipFormat' => __DIR__ . '/..' . '/kirschbaum-development/nova-inline-relationship/src/Exceptions/IncorrectRelationshipFormat.php',
@@ -3753,6 +3786,9 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'Opis\\Closure\\SecurityProvider' => __DIR__ . '/..' . '/opis/closure/src/SecurityProvider.php',
         'Opis\\Closure\\SelfReference' => __DIR__ . '/..' . '/opis/closure/src/SelfReference.php',
         'Opis\\Closure\\SerializableClosure' => __DIR__ . '/..' . '/opis/closure/src/SerializableClosure.php',
+        'OptimistDigital\\MultiselectField\\FieldServiceProvider' => __DIR__ . '/..' . '/optimistdigital/nova-multiselect-field/src/FieldServiceProvider.php',
+        'OptimistDigital\\MultiselectField\\Multiselect' => __DIR__ . '/..' . '/optimistdigital/nova-multiselect-field/src/Multiselect.php',
+        'OptimistDigital\\NovaTranslationsLoader\\LoadsNovaTranslations' => __DIR__ . '/..' . '/optimistdigital/nova-translations-loader/src/LoadsNovaTranslations.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php',
