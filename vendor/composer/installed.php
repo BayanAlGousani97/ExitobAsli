@@ -6,7 +6,11 @@
     'aliases' => 
     array (
     ),
+<<<<<<< HEAD
     'reference' => '65bcd0dffedecfb65a24a083485af926b05ae778',
+=======
+    'reference' => '57a791e246b8cd54013d2536fa8f568a939c861e',
+>>>>>>> 4b731afa0390b9293e4ec3dbfe9adef1adeb1d74
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -462,6 +466,24 @@
         0 => 'v7.30.4',
       ),
     ),
+    'izi-dev/nova-conditional-field' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3685f9df34cbd5dfd7fa089d2d6ff067145d8966',
+    ),
+    'kirschbaum-development/nova-inline-relationship' => 
+    array (
+      'pretty_version' => '0.3.0',
+      'version' => '0.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e1d05de11ae1271e99ba20597fb6988a0f402e3e',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -485,7 +507,11 @@
       'aliases' => 
       array (
       ),
+<<<<<<< HEAD
       'reference' => '65bcd0dffedecfb65a24a083485af926b05ae778',
+=======
+      'reference' => '57a791e246b8cd54013d2536fa8f568a939c861e',
+>>>>>>> 4b731afa0390b9293e4ec3dbfe9adef1adeb1d74
     ),
     'laravel/nova' => 
     array (
@@ -549,6 +575,15 @@
       array (
       ),
       'reference' => '3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3',
+    ),
+    'martinjuul/many-to-many' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '319e341af9c35398c0bd1caa3a892b1750f2b157',
     ),
     'mockery/mockery' => 
     array (
@@ -625,6 +660,24 @@
       array (
       ),
       'reference' => '06e2ebd25f2869e54a306dda991f7db58066f7f6',
+    ),
+    'optimistdigital/nova-multiselect-field' => 
+    array (
+      'pretty_version' => '2.3.1',
+      'version' => '2.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e3c5102ebc0809614c19562bf838f2e6819e43d8',
+    ),
+    'optimistdigital/nova-translations-loader' => 
+    array (
+      'pretty_version' => '3.1.2',
+      'version' => '3.1.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd66303a70e0f1c45d60c78a05658011777a00ce7',
     ),
     'paragonie/constant_time_encoding' => 
     array (

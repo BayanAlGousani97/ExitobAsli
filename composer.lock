@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5acc988c5f175c5d9b593bb72b5c6f70",
+    "content-hash": "ec5a49efb4bab01ad1090a3c930df614",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1326,6 +1326,107 @@
             "time": "2021-04-26T09:17:50+00:00"
         },
         {
+            "name": "izi-dev/nova-conditional-field",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/izi-dev/nova-conditional-if.git",
+                "reference": "3685f9df34cbd5dfd7fa089d2d6ff067145d8966"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/izi-dev/nova-conditional-if/zipball/3685f9df34cbd5dfd7fa089d2d6ff067145d8966",
+                "reference": "3685f9df34cbd5dfd7fa089d2d6ff067145d8966",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "IziDev\\ConditionalField\\ConditionalFieldProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "IziDev\\ConditionalField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Conditional Field",
+            "keywords": [
+                "conditional",
+                "dependency",
+                "field",
+                "laravel",
+                "nova",
+                "visible"
+            ],
+            "support": {
+                "issues": "https://github.com/izi-dev/nova-conditional-if/issues",
+                "source": "https://github.com/izi-dev/nova-conditional-if/tree/master"
+            },
+            "time": "2020-07-17T21:11:13+00:00"
+        },
+        {
+            "name": "kirschbaum-development/nova-inline-relationship",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kirschbaum-development/nova-inline-relationship.git",
+                "reference": "e1d05de11ae1271e99ba20597fb6988a0f402e3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kirschbaum-development/nova-inline-relationship/zipball/e1d05de11ae1271e99ba20597fb6988a0f402e3e",
+                "reference": "e1d05de11ae1271e99ba20597fb6988a0f402e3e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.26.2",
+                "laravel/nova": "*",
+                "mockery/mockery": "^1.1",
+                "orchestra/testing": "^4.0",
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KirschbaumDevelopment\\NovaInlineRelationship\\NovaInlineRelationshipServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KirschbaumDevelopment\\NovaInlineRelationship\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field for displaying relationship properties inline.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/kirschbaum-development/nova-inline-relationship/issues",
+                "source": "https://github.com/kirschbaum-development/nova-inline-relationship/tree/0.3.0"
+            },
+            "time": "2020-03-05T22:07:37+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v7.30.4",
             "source": {
@@ -1997,6 +2098,62 @@
             "time": "2021-01-18T20:58:21+00:00"
         },
         {
+            "name": "martinjuul/many-to-many",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martin-juul/many-to-many.git",
+                "reference": "319e341af9c35398c0bd1caa3a892b1750f2b157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/martin-juul/many-to-many/zipball/319e341af9c35398c0bd1caa3a892b1750f2b157",
+                "reference": "319e341af9c35398c0bd1caa3a892b1750f2b157",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "laravel/nova": "~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Juul\\Fields\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Juul\\Fields\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Juul",
+                    "homepage": "https://juul.xyz"
+                }
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "martin-juul",
+                "martinjuul",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/martin-juul/many-to-many/issues",
+                "source": "https://github.com/martin-juul/many-to-many/tree/1.0.1"
+            },
+            "time": "2020-12-07T16:48:15+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.3.0",
             "source": {
@@ -2360,6 +2517,121 @@
                 "source": "https://github.com/opis/closure/tree/3.6.2"
             },
             "time": "2021-04-09T13:42:10+00:00"
+        },
+        {
+            "name": "optimistdigital/nova-multiselect-field",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optimistdigital/nova-multiselect-field.git",
+                "reference": "e3c5102ebc0809614c19562bf838f2e6819e43d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optimistdigital/nova-multiselect-field/zipball/e3c5102ebc0809614c19562bf838f2e6819e43d8",
+                "reference": "e3c5102ebc0809614c19562bf838f2e6819e43d8",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^3.0",
+                "optimistdigital/nova-translations-loader": "^3.0.0",
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OptimistDigital\\MultiselectField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OptimistDigital\\MultiselectField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tarvo Reinpalu",
+                    "email": "tarvoreinpalu@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Optimist Digital",
+                    "email": "info@optimistdigital.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A multiple select field for Laravel Nova.",
+            "keywords": [
+                "laravel",
+                "multiselect",
+                "nova",
+                "select"
+            ],
+            "support": {
+                "issues": "https://github.com/optimistdigital/nova-multiselect-field/issues",
+                "source": "https://github.com/optimistdigital/nova-multiselect-field/tree/2.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/optimistdigital",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-22T11:17:02+00:00"
+        },
+        {
+            "name": "optimistdigital/nova-translations-loader",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optimistdigital/nova-translations-loader.git",
+                "reference": "d66303a70e0f1c45d60c78a05658011777a00ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optimistdigital/nova-translations-loader/zipball/d66303a70e0f1c45d60c78a05658011777a00ce7",
+                "reference": "d66303a70e0f1c45d60c78a05658011777a00ce7",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.21 || ^8.0",
+                "laravel/nova": "^3.0",
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OptimistDigital\\NovaTranslationsLoader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This Laravel Nova package helps developers load translations into their packages.",
+            "keywords": [
+                "laravel",
+                "nova",
+                "optimistdigital",
+                "translations"
+            ],
+            "support": {
+                "issues": "https://github.com/optimistdigital/nova-translations-loader/issues",
+                "source": "https://github.com/optimistdigital/nova-translations-loader/tree/3.1.2"
+            },
+            "time": "2021-06-18T12:46:46+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",

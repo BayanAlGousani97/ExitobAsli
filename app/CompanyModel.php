@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class CompanyModel extends Model
 {
     //
+    protected $casts = [
+        'publish_date' => 'date'
+    ];
     public function design(){
         return $this->belongsTo('App\Design' ,'design_id');
     }

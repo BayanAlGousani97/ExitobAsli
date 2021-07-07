@@ -6,7 +6,23 @@ use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
-
+use App\Nova\City;
+use App\Nova\Country;
+use App\Nova\Brand;
+use App\Nova\Customer;
+use App\Nova\Design;
+use App\Nova\Exporter;
+use App\Nova\ExternalModel;
+use App\Nova\HaulageCompany;
+use App\Nova\ModelsWarehouse;
+use App\Nova\Option;
+use App\Nova\OptionValue;
+use App\Nova\Order;
+use App\Nova\RawMaterial;
+use App\Nova\RawMaterialWarehouse;
+use App\Nova\Season;
+use App\Nova\User;
+use App\Nova\Workshop;
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
     /**
@@ -18,7 +34,27 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         parent::boot();
     }
-
+    protected function resources(){
+        Nova::resources([
+            Brand::class,
+            City::class,
+            Country::class,
+            Customer::class,
+            Design::class,
+            Exporter::class,
+            ExternalModel::class,
+            HaulageCompany::class,
+            ModelsWarehouse::class,
+            Option::class,
+            OptionValue::class,
+            Order::class,
+            RawMaterial::class,
+            RawMaterialWarehouse::class,
+            Season::class,
+            User::class,
+            Workshop::class,
+        ]);
+    }
     /**
      * Register the Nova routes.
      *

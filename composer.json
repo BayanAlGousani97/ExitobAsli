@@ -14,10 +14,14 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "izi-dev/nova-conditional-field": "^2.1",
+        "kirschbaum-development/nova-inline-relationship": "^0.3.0",
         "laravel/framework": "^7.0",
         "laravel/nova": "*",
         "laravel/tinker": "^2.0",
-        "lathanhvien/nova-text-currency": "^1.0"
+        "lathanhvien/nova-text-currency": "^1.0",
+        "martinjuul/many-to-many": "^1.0",
+        "optimistdigital/nova-multiselect-field": "^2.3"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
