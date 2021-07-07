@@ -35,38 +35,44 @@ class Order extends Resource
                     'PACKED' => 'PACKED',
                     'SHIPPED' => 'SHIPPED',
                   ]),
+                  BelongsTo::make('Customer Name','customer','App\Nova\Customer'),
             ConditionalContainer::make([ 
                           DateTime::make('Ordered Date','order_date'),
                           Number::make('Ordered Quantity','ordering_quantity')->rules('required','max:50'),
-                         Boolean::make('Packed!','packed'), ])
-                                ->if('status = ORDERED'),
-            
-                                ConditionalContainer::make([Number::make(' Packed Quantity','packing_quantity')->rules('required','max:50'),
-                                DateTime::make('Packed Date','packed_date'),
-                                    Boolean::make('Haulage!','Haulage'),
+
+                          Boolean::make('Available?','is_available')->rules('required','max:50'),
+                         Boolean::make('Packed!','is_packed'), 
+
+                         ])
+                        ->if('status = ORDERED'),
+                        ConditionalContainer::make([Number::make(' Packed Quantity','packing_quantity')->rules('required','max:50'),
+                         DateTime::make('Packed Date','packed_date'),
+                        Boolean::make('Shipping!','is_shipped'),
                                     ])
-                                   ->if('packed = true'),
+                                   ->if('is_packed = true AND is_available = true' ),
+                                
             ConditionalContainer::make([Number::make(' Packed Quantity','packing_quantity')->rules('required','max:50'),
                              DateTime::make('Packed Date','packed_date'),
-                                 Boolean::make('Haulage!','Haulage'), 
-                                 BelongsTo::make('Customer Name','customer','App\Nova\Customer'),])
-                                ->if('status = PACKED '),
-                                ConditionalContainer::make([Number::make(' Packed Quantity','packing_quantity')->rules('required','max:50'),
-                             ])
-                                ->if('status = PACKED '),
+                             
+                             Boolean::make('Shipping!','is_shipped'),
+                                 ])
+                                ->if('status = PACKED  ' ),
+                              
                                 ConditionalContainer::make([ Number::make(' Shipped Quantity','shipping_quantity')->rules('required','max:50'),
                                 DateTime::make('Shipped Date','shipped_date'),
                                 Currency::make('Price','price'),
-                                BelongsTo::make('Customer Name','customer','App\Nova\Customer')
-                                    ])
-                                   ->if(' Haulage = true'),                             
+                                
+                                  Boolean::make('Done?','is_done'),  ])
+                                   ->if(' is_shipped = true'),                             
             ConditionalContainer::make([  Number::make(' Shipped Quantity','shipping_quantity')->rules('required','max:50'),
                     DateTime::make('Shipped Date','shipped_date'),
                     Currency::make('Price','price'),
-                    BelongsTo::make('Customer Name','customer','App\Nova\Customer')
+                   
                                     ])
                                    ->if('status = SHIPPED '),
+                                   
         ];
+        
         
     }
     public function cards(Request $request)

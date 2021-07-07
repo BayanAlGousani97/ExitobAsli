@@ -2010,7 +2010,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova",
-                "reference": "57df3a641c60b10ba0ea05700f95c4aa9651c7eb"
+                "reference": "784ccdf488f403818c2fa5aa0c5e2ddd8209950f"
             },
             "require": {
                 "brick/money": "^0.5.0",
