@@ -19,6 +19,7 @@ class Brand extends Resource
     public static $showColumnBorders = true;
     public static $tableStyle = 'tight';
 
+
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
