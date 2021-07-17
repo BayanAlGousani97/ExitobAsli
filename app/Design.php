@@ -7,8 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Design extends Model
 {
     //
+
+  //  protected $casts = [
+    //    'day' => 'publish_date'
+   // ];
     protected $casts = [
-        'publish_date' => 'date'
+        'DATE' => 'publish_date'
     ];
 
     public function season(){
@@ -29,5 +33,8 @@ class Design extends Model
 
     public function raw_matrials(){
         return $this->belongsToMany('App\RawMaterial' , 'designs_raw_matrials' , 'design_id' , 'raw_material_id');
+        // return $this->belongsToMany(\App\RawMaterial::class);
     }
+    
+        
 }
