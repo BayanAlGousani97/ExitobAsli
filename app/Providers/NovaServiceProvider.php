@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+
+use App\Nova\EnterIOBill;
+use App\Nova\IOBill;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Nova;
@@ -23,21 +26,27 @@ use App\Nova\RawMaterialWarehouse;
 use App\Nova\Season;
 use App\Nova\User;
 use App\Nova\Workshop;
+<<<<<<< HEAD
 use App\Nova\CompanyModel;
+=======
+
+
+
+
+
+>>>>>>> 3ca5a4be84df14bd4e338ddcca2ab011d13f66e6
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
+
     public function boot()
     {
         parent::boot();
     }
+
     protected function resources(){
         Nova::resources([
             Brand::class,
+
             City::class,
             Country::class,
             Customer::class,
@@ -55,6 +64,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             Season::class,
             User::class,
             Workshop::class,
+            EnterIOBill::class,
+            IOBill::class
         ]);
     }
     /**
@@ -115,7 +126,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      */
     public function tools()
     {
-        return [];
+        return [
+            new \KABBOUCHI\LogsTool\LogsTool(),
+        ];
     }
 
     /**

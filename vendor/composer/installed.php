@@ -6,7 +6,11 @@
     'aliases' => 
     array (
     ),
+<<<<<<< HEAD
     'reference' => '113def16e6d0bcaf8c2d3fa85b27f44936679762',
+=======
+    'reference' => '4cdbe93cee24748c2c6e74335ee1a8d0cebe0cce',
+>>>>>>> 3ca5a4be84df14bd4e338ddcca2ab011d13f66e6
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -81,12 +85,12 @@
     ),
     'doctrine/cache' => 
     array (
-      'pretty_version' => '2.0.3',
-      'version' => '2.0.3.0',
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c9622c6820d3ede1e2315a6a377ea1076e421d88',
+      'reference' => 'ac77408b22cc6c4d0b4947d20a3889be3043566e',
     ),
     'doctrine/dbal' => 
     array (
@@ -159,6 +163,15 @@
       array (
       ),
       'reference' => '0dbf5d78455d4d6a41d186da50adc1122ec066f4',
+    ),
+    'emilianotisato/nova-belongsto-depends' => 
+    array (
+      'pretty_version' => '0.1.4',
+      'version' => '0.1.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd4d1e37394cf3394ed479551e7124921c9886afc',
     ),
     'facade/flare-client-php' => 
     array (
@@ -471,6 +484,24 @@
       ),
       'reference' => '3685f9df34cbd5dfd7fa089d2d6ff067145d8966',
     ),
+    'kabbouchi/laravel-ward' => 
+    array (
+      'pretty_version' => 'v0.4.0',
+      'version' => '0.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4e5803330f67f34a69c79f7c98a262cb8618ab4e',
+    ),
+    'kabbouchi/nova-logs-tool' => 
+    array (
+      'pretty_version' => 'v0.3.0',
+      'version' => '0.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c3d55c4f58c502ece8d9be89d75fa9d047222c9e',
+    ),
     'kirschbaum-development/nova-inline-relationship' => 
     array (
       'pretty_version' => '0.3.0',
@@ -503,7 +534,11 @@
       'aliases' => 
       array (
       ),
+<<<<<<< HEAD
       'reference' => '113def16e6d0bcaf8c2d3fa85b27f44936679762',
+=======
+      'reference' => '4cdbe93cee24748c2c6e74335ee1a8d0cebe0cce',
+>>>>>>> 3ca5a4be84df14bd4e338ddcca2ab011d13f66e6
     ),
     'laravel/nova' => 
     array (
@@ -588,12 +623,12 @@
     ),
     'monolog/monolog' => 
     array (
-      'pretty_version' => '2.3.0',
-      'version' => '2.3.0.0',
+      'pretty_version' => '2.3.1',
+      'version' => '2.3.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'df991fd88693ab703aa403413d83e15f688dae33',
+      'reference' => '9738e495f288eec0b187e310b7cdbbb285777dbe',
     ),
     'moontoast/math' => 
     array (
@@ -1048,6 +1083,15 @@
       array (
       ),
       'reference' => '99732be0ddb3361e16ad77b68ba41efc8e979019',
+    ),
+    'simplesquid/nova-advanced-number-field' => 
+    array (
+      'pretty_version' => 'v2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'adbb14c4444a62c3e96beff9ec3ea4d542dc1ae9',
     ),
     'spatie/once' => 
     array (

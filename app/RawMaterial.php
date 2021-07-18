@@ -17,8 +17,10 @@ class RawMaterial extends Model
     public function values(){
         return $this->belongsToMany('App\OptionValue' , 'raw_matrials_values' , 'raw_material_id' , 'value_id');
     }
-    public function bills(){
-        return $this->belongsToMany('App\IOBill' , 'raw_matrials_bills' , 'raw_material_id' , 'bill_id');
+
+    public function enterBills()
+    {
+        return $this->hasMany(EnterIOBill::class,'material_id');
     }
 
 }

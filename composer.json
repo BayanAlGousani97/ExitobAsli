@@ -11,17 +11,22 @@
         "php": "^7.2.5|^8.0",
         "digital-creative/conditional-container": "^1.3",
         "dillingham/nova-attach-many": "^1.3",
+        "emilianotisato/nova-belongsto-depends": "^0.1.4",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "kabbouchi/nova-logs-tool": "^0.3.0",
+
         "izi-dev/nova-conditional-field": "^2.1",
         "kirschbaum-development/nova-inline-relationship": "^0.3.0",
         "laravel/framework": "^7.0",
         "laravel/nova": "*",
         "laravel/tinker": "^2.0",
         "lathanhvien/nova-text-currency": "^1.0",
+        "simplesquid/nova-advanced-number-field": "^2.0",
         "martinjuul/many-to-many": "^1.0",
         "optimistdigital/nova-multiselect-field": "^2.3"
+
     },
     "require-dev": {
         "facade/ignition": "^2.0",

@@ -34,7 +34,11 @@ class RawMaterial extends Resource
      *
      * @var string
      */
+<<<<<<< HEAD
     public static $title = 'name';
+=======
+    public static $title = 'code';
+>>>>>>> 3ca5a4be84df14bd4e338ddcca2ab011d13f66e6
 
     /**
      * The columns that should be searched.
@@ -42,7 +46,7 @@ class RawMaterial extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'code',
     ];
 
     /**
@@ -57,17 +61,8 @@ class RawMaterial extends Resource
             ID::make(__('ID'), 'id')->sortable(),
 
             Text::make('Name','name')->rules('required'),
-//            BelongsToMany::make('color','color',OptionValue::class),
-
-          //  Select::make('color', 'component')
-         //   ->options( OptionValue::query()->where('option_id','=',2)->pluck('value','option_id')->toArray()),
-
             BelongsTo::make('exporter name','exporter','App\Nova\Exporter')->showCreateRelationButton(),
-
-//           AttachMany::make('component', 'values', \App\Nova\OptionValue::class),
-
             Text::make('Type','type'),
-
             Text::make('Code', 'code')->rules('required')
             ->creationRules('unique:raw_materials,code')
             ->updateRules('unique:raw_materials,code,{{resourceId}}'),
