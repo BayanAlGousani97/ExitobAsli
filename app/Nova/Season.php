@@ -26,7 +26,7 @@ class Season extends Resource
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Name','name')->rules('required','max:50'),
             Number::make('Year','year'),
-            BelongsTo::make('Company Name','brand','App\Nova\brand'),
+            BelongsTo::make('Company Name','brand','App\Nova\brand')->showCreateRelationButton(),
         ];
     }
 

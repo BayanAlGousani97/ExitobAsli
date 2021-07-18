@@ -13,7 +13,7 @@ class CreateModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('models', function (Blueprint $table) {
+        Schema::create('company_models', function (Blueprint $table) {
             $table->id();
             $table->double('number')->nullable();
             $table->string('name')->nullable();

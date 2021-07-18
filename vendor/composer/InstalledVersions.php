@@ -30,11 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-<<<<<<< HEAD
-    'reference' => '65bcd0dffedecfb65a24a083485af926b05ae778',
-=======
-    'reference' => '57a791e246b8cd54013d2536fa8f568a939c861e',
->>>>>>> 4b731afa0390b9293e4ec3dbfe9adef1adeb1d74
+    'reference' => '113def16e6d0bcaf8c2d3fa85b27f44936679762',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -199,12 +195,12 @@ private static $installed = array (
     ),
     'facade/ignition' => 
     array (
-      'pretty_version' => '2.10.2',
-      'version' => '2.10.2.0',
+      'pretty_version' => '2.11.0',
+      'version' => '2.11.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '43688227bbf27c43bc1ad83af224f135b6ef0ff4',
+      'reference' => 'dc6818335f50ccf0b90284784718ea9a82604286',
     ),
     'facade/ignition-contracts' => 
     array (
@@ -226,12 +222,12 @@ private static $installed = array (
     ),
     'filp/whoops' => 
     array (
-      'pretty_version' => '2.13.0',
-      'version' => '2.13.0.0',
+      'pretty_version' => '2.14.0',
+      'version' => '2.14.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2edbc73a4687d9085c8f20f398eebade844e8424',
+      'reference' => 'fdf92f03e150ed84d5967a833ae93abffac0315b',
     ),
     'fruitcake/laravel-cors' => 
     array (
@@ -531,11 +527,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-<<<<<<< HEAD
-      'reference' => '65bcd0dffedecfb65a24a083485af926b05ae778',
-=======
-      'reference' => '57a791e246b8cd54013d2536fa8f568a939c861e',
->>>>>>> 4b731afa0390b9293e4ec3dbfe9adef1adeb1d74
+      'reference' => '113def16e6d0bcaf8c2d3fa85b27f44936679762',
     ),
     'laravel/nova' => 
     array (
@@ -544,7 +536,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '784ccdf488f403818c2fa5aa0c5e2ddd8209950f',
+      'reference' => '57df3a641c60b10ba0ea05700f95c4aa9651c7eb',
     ),
     'laravel/tinker' => 
     array (

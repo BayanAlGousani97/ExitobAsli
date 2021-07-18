@@ -12,15 +12,15 @@ class Design extends Model
     //    'day' => 'publish_date'
    // ];
     protected $casts = [
-        'DATE' => 'publish_date'
+        'publish_date' => 'date'
     ];
 
     public function season(){
         return $this->belongsTo('App\Season' , 'season_id');
     }
 
-    public function models(){
-        return $this->hasMany('App\Model' , 'design_id');
+    public function CompanyModels(){
+        return $this->hasMany('App\CompanyModel' , 'design_id');
     }
 
     public function messages(){

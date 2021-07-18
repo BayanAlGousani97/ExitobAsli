@@ -23,6 +23,7 @@ use App\Nova\RawMaterialWarehouse;
 use App\Nova\Season;
 use App\Nova\User;
 use App\Nova\Workshop;
+use App\Nova\CompanyModel;
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
     /**
@@ -40,6 +41,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             City::class,
             Country::class,
             Customer::class,
+            CompanyModel::class,
             Design::class,
             Exporter::class,
             ExternalModel::class,

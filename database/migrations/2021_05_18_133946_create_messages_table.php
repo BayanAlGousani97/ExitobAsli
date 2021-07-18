@@ -29,8 +29,8 @@ class CreateMessagesTable extends Migration
 
             $table->bigInteger('design_id')->unsigned();
             $table->foreign('design_id')->references('id')->on('designs')->onDelete('cascade');
-            $table->bigInteger('model_id')->unsigned();
-            $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
+            $table->bigInteger('company_model_id')->unsigned();
+            $table->foreign('company_model_id')->references('id')->on('company_models')->onDelete('cascade');
 
             $table->bigInteger('framework_id')->unsigned();
             $table->foreign('framework_id')->references('id')->on('frameworks')->onDelete('cascade');

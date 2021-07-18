@@ -17,8 +17,8 @@ class CreateModelsOrdersTable extends Migration
 
             $table->double('quantity')->default('0');
 
-            $table->bigInteger('model_id')->unsigned();
-            $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
+            $table->bigInteger('company_model_id')->unsigned();
+            $table->foreign('company_model_id')->references('id')->on('company_models')->onDelete('cascade');
 
             $table->bigInteger('order_id')->unsigned();
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');

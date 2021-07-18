@@ -35,7 +35,7 @@ class Order extends Resource
                     'PACKED' => 'PACKED',
                     'SHIPPED' => 'SHIPPED',
                   ]),
-                  BelongsTo::make('Customer Name','customer','App\Nova\Customer'),
+            BelongsTo::make('Customer Name','customer','App\Nova\Customer'),
             ConditionalContainer::make([ 
                           DateTime::make('Ordered Date','order_date'),
                           Number::make('Ordered Quantity','ordering_quantity')->rules('required','max:50'),
@@ -45,8 +45,8 @@ class Order extends Resource
 
                          ])
                         ->if('status = ORDERED'),
-                        ConditionalContainer::make([Number::make(' Packed Quantity','packing_quantity')->rules('required','max:50'),
-                         DateTime::make('Packed Date','packed_date'),
+            ConditionalContainer::make([Number::make(' Packed Quantity','packing_quantity')->rules('required','max:50'),
+                        DateTime::make('Packed Date','packed_date'),
                         Boolean::make('Shipping!','is_shipped'),
                                     ])
                                    ->if('is_packed = true AND is_available = true' ),
@@ -58,7 +58,7 @@ class Order extends Resource
                                  ])
                                 ->if('status = PACKED  ' ),
                               
-                                ConditionalContainer::make([ Number::make(' Shipped Quantity','shipping_quantity')->rules('required','max:50'),
+            ConditionalContainer::make([ Number::make(' Shipped Quantity','shipping_quantity')->rules('required','max:50'),
                                 DateTime::make('Shipped Date','shipped_date'),
                                 Currency::make('Price','price'),
                                 

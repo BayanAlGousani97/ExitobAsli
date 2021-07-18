@@ -24,8 +24,8 @@ class CreateFrameworksTable extends Migration
             $table->double('framework_quantity')->nullable();
             $table->double('needed_quantity')->nullable();
             
-            $table->bigInteger('model_id')->unsigned();
-            $table->foreign('model_id')->references('id')->on('models')->onDelete('cascade');
+            $table->bigInteger('company_model_id')->unsigned();
+            $table->foreign('company_model_id')->references('id')->on('company_models')->onDelete('cascade');
          
             $table->timestamps();
         });

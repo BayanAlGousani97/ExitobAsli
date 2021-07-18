@@ -3,21 +3,18 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Number;
-use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use Laravel\Nova\Fields\BelongsTo;
 
-class CompanyModel extends Resource
+class Image extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\CompanyModel::class;
+    public static $model = \App\Image::class;
+
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
@@ -34,7 +31,6 @@ class CompanyModel extends Resource
         'id',
     ];
 
-
     /**
      * Get the fields displayed by the resource.
      *
@@ -45,13 +41,7 @@ class CompanyModel extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Number::make('Number' , 'number')->rules('required'),
-            Text::make('Name','name'),
-            Date::make('Date','publish_datetime')->rules('required'),
-            Text::make('Designer Notes' , 'description'),
-            Number::make('Pieces Count' , 'pieces_count')->rules('required'),
-            BelongsTo::make('Model Warehouse' , 'models_warehouse' , 'App\Nova\ModelsWarehouse'),
-            BelongsTo::make('Design' , 'design' , 'App\Nova\Design'),
+            
         ];
     }
 

@@ -35,9 +35,9 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
-        'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -635,6 +635,7 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'App\\Nova\\Exporter' => __DIR__ . '/../..' . '/app/Nova/Exporter.php',
         'App\\Nova\\ExternalModel' => __DIR__ . '/../..' . '/app/Nova/ExternalModel.php',
         'App\\Nova\\HaulageCompany' => __DIR__ . '/../..' . '/app/Nova/HaulageCompany.php',
+        'App\\Nova\\Image' => __DIR__ . '/../..' . '/app/Nova/Image.php',
         'App\\Nova\\ModelsWarehouse' => __DIR__ . '/../..' . '/app/Nova/ModelsWarehouse.php',
         'App\\Nova\\Option' => __DIR__ . '/../..' . '/app/Nova/Option.php',
         'App\\Nova\\OptionValue' => __DIR__ . '/../..' . '/app/Nova/OptionValue.php',
@@ -1370,6 +1371,7 @@ class ComposerStaticInit1313c1f007a72fc7f286e79316411ab8
         'Facade\\Ignition\\DumpRecorder\\MultiDumpHandler' => __DIR__ . '/..' . '/facade/ignition/src/DumpRecorder/MultiDumpHandler.php',
         'Facade\\Ignition\\ErrorPage\\ErrorPageHandler' => __DIR__ . '/..' . '/facade/ignition/src/ErrorPage/ErrorPageHandler.php',
         'Facade\\Ignition\\ErrorPage\\ErrorPageViewModel' => __DIR__ . '/..' . '/facade/ignition/src/ErrorPage/ErrorPageViewModel.php',
+        'Facade\\Ignition\\ErrorPage\\IgnitionExceptionRenderer' => __DIR__ . '/..' . '/facade/ignition/src/ErrorPage/IgnitionExceptionRenderer.php',
         'Facade\\Ignition\\ErrorPage\\IgnitionWhoopsHandler' => __DIR__ . '/..' . '/facade/ignition/src/ErrorPage/IgnitionWhoopsHandler.php',
         'Facade\\Ignition\\ErrorPage\\Renderer' => __DIR__ . '/..' . '/facade/ignition/src/ErrorPage/Renderer.php',
         'Facade\\Ignition\\Exceptions\\InvalidConfig' => __DIR__ . '/..' . '/facade/ignition/src/Exceptions/InvalidConfig.php',
